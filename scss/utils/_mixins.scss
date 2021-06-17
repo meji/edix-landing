@@ -1,0 +1,133 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin text-field {
+ display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  @include rounded();
+  @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+}
+
+@mixin button($color: $red, $text_color: $white) {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  @include rounded();
+  @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+
+  color: $text_color !important;
+  font-weight: bold;
+  border: solid 1px darken($color, 18%);
+  background: $color;
+  @include gradient(saturate($color, 15%), darken($color, 15%));
+
+  &:hover {
+    text-decoration: none;
+    background: saturate($color, 10%);
+    @include gradient(saturate($color, 5%), darken($color, 5%));
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+    color: saturate($color, 15%);
+    @include gradient(saturate($color, 15%), lighten($color, 15%));
+  }
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+@mixin gradient_foto{
+  background: rgba(0,0,0,0);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 64%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(64%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 64%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 64%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 64%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 64%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+// Respond above and below.
+@mixin respond-above($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($grid-breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+
+  // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+@mixin respond-below($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($grid-breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+
+  // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+//Mixin antialiased
+@mixin font-smoothing($value) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+//Mixin text shadow
+@mixin text-shadow-normal() {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}

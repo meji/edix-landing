@@ -1,0 +1,125 @@
+footer#footer {
+  background: #000;
+  color: #fff;
+  padding: 72px 0;
+  margin-top: 64px;
+  .upper-footer {
+    font-size: 0.875rem;
+    padding-bottom: 104px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #fff;
+    .footer-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      a,
+      .shoot-link,
+      .shoot-link-blank {
+        color: #fff;
+        &:hover {
+          color: $c-moradoclaro;
+        }
+      }
+      img {
+        filter: brightness(100);
+      }
+    }
+    ul {
+      font-size: 0.875rem;
+      list-style-type: none;
+      li {
+        color: #fff;
+        font-weight: normal;
+        margin-bottom: 16px;
+        line-height: 1;
+        a {
+          color: #fff;
+          font-weight: 600;
+          &:hover {
+            color: $c-moradoclaro;
+          }
+        }
+      }
+    }
+  }
+  .downer-footer {
+    .up-line {
+      select.form-control {
+        background: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        border-color: #fff;
+        width: auto;
+        margin-left: 16px;
+        min-width: 200px;
+      }
+      ul.social {
+        margin-top: 40px;
+        li {
+          margin-right: 30px;
+          img {
+            max-width: 20px;
+          }
+          a:hover,
+          .shoot-link:hover,
+          .shoot-link-blank:hover {
+            path {
+              fill: $c-moradoclaro;
+              transition: $transition;
+            }
+          }
+        }
+      }
+    }
+    p {
+      margin: 40px 0;
+      font-size: 0.875rem;
+      &.legal {
+        color: $c-grey-text;
+        a {
+          color: $c-grey-text;
+          margin: 0 16px;
+          &:hover {
+            color: $c-moradoclaro;
+          }
+        }
+      }
+    }
+    .logo-footer {
+      width: 120px;
+    }
+  }
+}
+
+@include respond-above(lg) {
+  footer#footer {
+    margin-top: 72px;
+    .downer-footer {
+      .up-line {
+        margin-bottom: 56px;
+        ul.social {
+          margin-top: 0;
+          li {
+            margin-left: 30px;
+            margin-right: 0;
+          }
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include respond-above(xl) {
+  footer#footer {
+    margin-top: 144px;
+    .upper-footer {
+      .footer-title {
+        margin-top: 0;
+      }
+    }
+  }
+}

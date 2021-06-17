@@ -1,0 +1,21 @@
+//POSTS
+.post-module{ margin-bottom: 32px;
+  figure{
+    img{display: block; margin: 0 auto 16px;}
+    .h4, .h5, .h6{ line-height: 1.2;
+      margin: 16px 0;
+      a{color: #000;  transition: $transition;
+        &:hover{color: $c-morado; transition: $transition;}
+      }
+    }
+  }
+  &:hover{cursor:pointer}
+}
+
+@include respond-above(lg){
+  .post-module{ margin-bottom: 64px; /*padding: 0 32px;*/}
+}
+
+@include respond-below(xl){
+  .post-module .h4, .post-module  .h5, .post-module .h6{font-size: 150%;}
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Matriculación</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="scss/utils/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/style.css?v12">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/png">
+</head>
+<body class="matriculacion">
+
+<!-- Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header id="site-header" class="white closed not-fixed origin-white simple nav-down-fixed">
+  <div class="container">
+    <a id="logo" href="/" title="Ir a la home">
+      <img src="../images/logo_edix.svg" alt="logo Edix" title="Edix, Formación"/>
+    </a>
+    <img class="unir" src="../images/logo_unir.svg" alt="logo Unir" title="logo Unir"/>
+  </div>
+</header>
+
+<!-- Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<main id="main" class="container">
+  <div class="row with-head">
+    <div class="col-12 col-lg-7">
+      <h1 class="mtno title">Matrículate en EDIX</h1>
+      <p class="subtitle">Phasellus ac massa vulputate, lobortis velit vitae, bibendum mauris.</p>
+      <h4 class="form-title">Datos del alumno</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
+      <!-- Inicio form-->
+      <form id="matricula-form">
+        <div class="form-group">
+          <input type="text" id="name" class="form-control" placeholder="Nombre"/>
+        </div>
+        <div class="form-group">
+          <input type="text" id="surname" class="form-control" placeholder="Apellido"/>
+        </div>
+        <div class="form-group">
+          <input type="text" id="second-name" class="form-control error" placeholder="Segundo Apellido"/>
+          <small class="error">Este campo es obligatorio</small>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" class="form-control" placeholder="Email"/>
+        </div>
+        <div class="form-group">
+          <input type="text" id="second-email" class="form-control" placeholder="Segundo Email"/>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-9">
+            <input type="text" id="address" class="form-control" placeholder="Dirección"/>
+          </div>
+          <div class="form-group col-3">
+            <input type="text" id="cp" class="form-control" placeholder="C.P."/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-3">
+            <select class="form-control">
+              <option>+34</option>
+            </select>
+          </div>
+          <div class="form-group col-9">
+            <input type="phone" id="phone" class="form-control" placeholder="Teléfono móvil"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <p class="form-subtitle">Residente en España</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="resident_yes">
+              <input class="radio-button__input" type="radio" name="resident" id="resident_yes" value="Si" checked>
+              <span class="radio-button__control"></span>
+              <span class="radio-button__label">Si</span>
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="resident_no">
+              <input class="radio-button__input" type="radio" name="resident" id="resident_no" value="No">
+              <span class="radio-button__control"></span>
+              <span class="radio-button__label">No</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group resident">
+          <input type="text" id="dni" class="form-control" placeholder="Número de documento (DNI/NIE)"/>
+        </div>
+        <div class="no-resident hidden">
+          <div class="form-group">
+            <select class="form-control">
+              <option>Lugar de residencia</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-5">
+              <select class="form-control">
+                <option>Tipo de documento</option>
+              </select>
+            </div>
+            <div class="form-group col-7">
+              <input type="text" id="doc_number" class="form-control" placeholder="Número de documento"/>
+            </div>
+          </div>
+          <p class="notice-blue">Si resides fuera de España las prácticas tendrán que ser en la modalidad online, no podrán ser presenciales</p>
+        </div>
+        <h4 class="form-title">Formas de pago</h4>
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-unique-payment" role="tab" aria-controls="pills-home" aria-selected="true">Pago único</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-later-payment" role="tab" aria-controls="pills-profile" aria-selected="false">Pago aplazado</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Pago único
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div class="tab-pane fade show active" id="pills-unique-payment" role="tabpanel" aria-labelledby="pills-home-tab">
+            <p class="notice blue">Esta modalidad de pago ofrece un <br/><strong>10% de descuento</strong> sobre el precio total</p>
+            <div class="form-group">
+              <p class="form-subtitle">Método de pago</p>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="card">
+                  <input class="radio-button__input" type="radio" name="payment-way" id="card" value="card" checked>
+                  <span class="radio-button__control"></span>
+                  <span class="radio-button__label">Tarjeta crédito o débito <br/>(VISA, Mastercard, AmEx)</span>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="paypal">
+                  <input class="radio-button__input" type="radio" name="payment-way" id="paypal" value="paypal">
+                  <span class="radio-button__control"></span>
+                  <span class="radio-button__label">Paypal</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Pago aplazado
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div class="tab-pane fade" id="pills-later-payment" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <p class="notice blue">Esta modalidad de pago se hará a través de la platafora SEQURA. Solo necesitas un número de tarjeta de crédito o debito para poder aplazar en pago en <strong>10 cuotas de 200€</strong></p>
+          </div>
+        </div>
+        <hr/>
+        <div class="form-row">
+          <div class="col-12">
+            <div class="legal-text d-block grey-border">
+              EDIX EDUCACIÓN S.A. (en adelante, Edix), tratará los datos de carácter personal que nos has proporcionado con la finalidad de atender a tu solicitud de contratación de productos y/o servicios ofrecidos por Edix, así como para facilitarte el acceso al material formativo y la asistencia necesarios para cursar su carrera profesional, incluido por vía telefónica, así como para mantenerte informado de nuestra actividad. Podrás revocar el consentimiento otorgado, así como ejercitar los derechos reconocidos en los artículos 15 a 22 del Reglamento (UE) 2016/679, mediante solicitud dirigida a C/ Zurbano 73, 28010, Madrid, España, o a la siguiente dirección de correo electrónico: rgpd@edix.com, adjuntando copia de su DNI o documentación acreditativa de su identidad. Si lo deseas puede consultar información adicional y detallada sobre Protección de Datos pinchando <a href="/es/legal/#PoliticaDePrivacidad" title="Ver Política de privacidad">aquí</a>.
+            </div>
+          </div>
+        </div>
+        <div class="form-check">
+         <label class="custom-control-label" for="data-protection">
+            <input type="checkbox" class="custom-control-input check-button__input" id="data-protection">
+            <span class="check-button__control"></span>
+            <span class="check-button__label"> He leído y acepto las <a href="/es/legal/#CondicionesGeneralesDeContratacion" title="Ver las condiciones de protección de datos">condiciones generales de contratación</a></span>
+          </label>
+        </div>
+        <div class="form-check">
+         <label class="custom-control-label" for="legal">
+            <input type="checkbox" class="custom-control-input check-button__input" id="legal">
+            <span class="check-button__control"></span>
+            <span class="check-button__label">Deseo recibir información Edix y sus productos por cualquier vía, incluida la electrónica.</span>
+          </label>
+        </div>
+        <p class="notice red">Hay errores en el formulario, revisa los campos en rojo y vuelve a intentarlo.</p>
+        <p class="text-right submit">
+          <button type="submit" class="btn btn-primary">Pagar ahora</button>
+        </p>
+      </form>
+    </div>
+    <div class="col-12 col-lg-5 col-xl-4 order-1 order-lg-2">
+      <div class="career-card this-is-fixed">
+        <div class="row">
+          <p class="card-title col-8"><span>Experto en</span>Gestión de contenidos digitales</p>
+          <div class="col-4">
+            <div class="icon-container"><img class="career-icon" src="../images/career-icons/icon-name.svg" alt="Gestión de contenidos digitales icono" title="Gestión de contenidos digitales icono" ></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+          <p class="separator"></p>
+          <p class="card-title"><span>Precio total</span><del>2000€</del>  2000€ <small>(10% dto. en pago único)</small></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer id="footer" class="container">
+    <section id="site-black-footer" class="extended onecol">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="footer-title">¿Necesitas ayuda?</p>
+          <p class="mid-margin">Si lo necesitas escríbenos a <a href="mailto:info@edix.com" title="Enviar email a info@edix.com">info@edix.com</a> o llama a <a href="tel:916543210" title="Llamar">916 543 210</a></p>
+          <p class="small">(Horario: de lunes a viernes de 10:00 a 18:00)</p>
+        </div>
+      </div>
+    </section>
+    <section id="site-white-footer" class="extended">
+      <div class="row">
+        <p class="col-12 col-lg-5 col-xl-4 legal"><a href="#" title="Privacidad, cookies y condiciones legales">Privacidad, cookies y condiciones legales</a></p>
+        <div class="col-7 col-lg-3 col-xl-5">
+          <p class="copy">Copyright © 2019 Edix</p>
+        </div>
+        <div class="col-5 col-lg-4 col-xl-3">
+          <p class="unir-footer"> <img src="../images/logo_unir.svg" alt="Logo Unir"/></p>
+        </div>
+      </div>
+    </section>
+  </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="../js/swiper.min.js?v09"></script>
+  <script src="../js/jquery.touchSwipe.min.js?v09"></script>
+  <script src="../js/js.js?v09"></script>
+</body>
+</html>

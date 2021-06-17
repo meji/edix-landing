@@ -1,0 +1,40 @@
+.last-becas {
+  .last-beca {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $border-color;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    small {
+      font-size: 1rem;
+      display: block;
+      margin-top: 16px;
+      font-weight: normal;
+    }
+  }
+}
+
+@include respond-above(lg) {
+  .last-becas {
+    .last-beca {
+      border-bottom: 0 none;
+      ul {
+        justify-content: flex-start;
+        li {
+          margin-right: 32px;
+        }
+      }
+    }
+    .col-lg-6 {
+      &:nth-child(2),
+      &:nth-child(3) {
+        .last-beca {
+          border-bottom: 1px solid $border-color;
+        }
+      }
+    }
+  }
+}

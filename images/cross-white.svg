@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>cross</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cross" transform="translate(-1.000000, -1.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <rect id="Rectangle" transform="translate(11.989581, 11.990509) rotate(-135.605335) translate(-11.989581, -11.990509) " x="-2.83410068" y="10.7545291" width="29.6473631" height="2.47195968" rx="1.23597984"></rect>
+            <rect id="Rectangle" transform="translate(11.990970, 11.990492) rotate(134.419160) translate(-11.990970, -11.990492) " x="-2.83271168" y="10.7545621" width="29.6473631" height="2.47185909" rx="1.23592954"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+//Breadcrumb
+.breadcrumb {
+  background: transparent;
+  padding: 0 0 24px;
+  a,
+  .shoot-link {
+    color: #555;
+    font-weight: normal;
+  }
+  .breadcrumb-item.active {
+    font-weight: bold;
+    color: #000;
+  }
+  li.breadcrumb-item {
+    font-size: 1rem;
+  }
+}
+
+.hero-big .breadcrumb {
+  a,
+  .shoot-link {
+    color: #ccc;
+    font-weight: normal;
+  }
+  .breadcrumb-item.active {
+    color: #fff;
+  }
+}

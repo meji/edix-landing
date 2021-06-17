@@ -1,0 +1,36 @@
+.letter-container {
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.disable {
+    filter: saturate(0);
+    opacity: 0.3;
+  }
+}
+.letter {
+  max-width: 100%;
+  fill: #fff;
+}
+a .letter:hover {
+  path {
+    &.hover-purple {
+      fill: $c-morado;
+    }
+    &:not(.hover-purple) {
+      fill: transparent;
+    }
+  }
+  path[fill='#A049F8'],
+  path[fill='#6A00C2'],
+  rect {
+    fill: $c-azulclaro;
+  }
+}
+
+@include respond-above(lg) {
+  .letter {
+    max-width: none;
+    padding: 8px 32px;
+  }
+}

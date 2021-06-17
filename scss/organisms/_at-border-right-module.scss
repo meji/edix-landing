@@ -1,0 +1,24 @@
+///////////FOTOS PEGADAS AL BORDER DERECHO
+.at-border-right{text-align: right;
+  img{margin-bottom: 32px; }
+}
+
+// @include respond-above(md){
+// 	.at-border-right{
+// 		img{  }
+// 	}
+// }
+@include respond-above(lg){
+  .at-border-right{right: -72px; text-align: right; position: relative;
+    img{margin-bottom: 0;margin-right: -12px;}
+  }
+}
+@include respond-above(xl){
+  .at-border-right{right: -96px;}
+}
+@include respond-above(xxl){
+  .at-border-right{right: -120px;}
+}
+@include respond-above(xxxl){
+  .at-border-right{right: -160px;}
+}

@@ -1,0 +1,242 @@
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/** TEXTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
+a,
+.link-primary {
+  text-decoration: none;
+  color: $c-morado;
+  font-weight: bold;
+  &:hover {
+    color: $c-azuloscuro;
+    cursor: pointer;
+  }
+}
+.text-white {
+  a,
+  .link-primary {
+    color: #fff;
+  }
+}
+p.scroll {
+  height: 3000px;
+  background: purple;
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  list-style-position: inside;
+  &.inline {
+    list-style-type: none;
+    line-height: 1.4;
+    li {
+      display: inline-block;
+    }
+  }
+  ol {
+    list-style-type: lower-latin;
+  }
+  ol,
+  ul {
+    padding-left: 48px;
+  }
+}
+figure {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 72px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+h1,
+.h1 {
+  font-size: 2.5rem; /*40px*/
+  margin-top: 120px;
+  margin-bottom: 32px;
+}
+h2,
+.h2 {
+  font-size: 1.875rem /*30px*/;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+h3,
+.h3 {
+  font-size: 1.5625rem /*25px*/;
+  margin-top: 96px;
+}
+h4,
+.h4 {
+  font-size: 1.25rem /*20px*/;
+}
+h5,
+.h5 {
+  font-size: 1.125rem /*18px*/;
+}
+h6,
+.h6 {
+  font-size: 0.875rem; /*14px*/
+}
+p,
+ul,
+ol,
+.p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+p.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+.text-small {
+  font-size: 0.875rem;
+}
+
+/* Texts WYSIWYG RWD */
+@include respond-above(xl) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-top: 96px;
+    margin-bottom: 16px;
+    word-break: break-word;
+  }
+  h1,
+  .h1 {
+    font-size: 3.75rem;
+    margin-top: 144px;
+    margin-bottom: 32px;
+  }
+  h2,
+  .h2 {
+    font-size: 3.125rem;
+    margin-top: 144px;
+    margin-bottom: 16px;
+  }
+  h3,
+  .h3 {
+    font-size: 2.5rem;
+    margin-top: 145px;
+    margin-bottom: 16px;
+  }
+  h4,
+  .h4 {
+    font-size: 1.875rem;
+  }
+  h5,
+  .h5 {
+    font-size: 1.5625rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.25rem;
+  }
+  p.subtitle {
+    font-size: 1.25rem;
+  }
+  figcaption {
+    font-size: 0.8125rem;
+  }
+}
+@include respond-above(xxxl) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-top: 120px;
+    margin-bottom: 24px;
+  }
+  h1,
+  .h1 {
+    font-size: 5rem;
+    margin-top: 160px;
+    margin-bottom: 40px;
+  }
+  h2,
+  .h2 {
+    font-size: 4.125rem;
+    margin-top: 160px;
+    margin-bottom: 32px;
+  }
+  h3,
+  .h3 {
+    font-size: 3.3125rem;
+    margin-top: 145px;
+    margin-bottom: 32px;
+  }
+  h4,
+  .h4 {
+    font-size: 2.4375rem;
+  }
+  h5,
+  .h5 {
+    font-size: 1.75rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.5rem;
+  }
+  p,
+  .p {
+    font-size: 1.31rem;
+    margin-bottom: 24px;
+  }
+
+  ul.text {
+    li {
+      font-size: 1.31rem;
+      ul,
+      ol {
+        font-size: 1rem;
+      }
+    }
+  }
+  .text-small {
+    font-size: 1rem;
+  }
+}

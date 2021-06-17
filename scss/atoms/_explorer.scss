@@ -1,0 +1,7 @@
+/** 09 EXPLORER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
+@media all and (-ms-high-contrast:none){
+  *::-ms-backdrop, .data-container.d-flex{display:flex !important;}
+  *::-ms-backdrop, .d-flex{display: block !important}
+  *::-ms-backdrop, #wrapper{-ms-flex:1;-webkit-flex:1;flex:1;}
+}

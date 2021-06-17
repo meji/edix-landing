@@ -1,0 +1,47 @@
+.text-white {
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: $c-moradoclaro;
+      transition: $transition;
+    }
+  }
+}
+.text-blue {
+  color: $c-azuloscuro;
+}
+.bg-blue-light {
+  background: $c-azulform;
+}
+.bg-blue-dark {
+  background: $c-azuloscuro;
+}
+.purple-bg {
+  background-color: $c-morado;
+}
+.purple-light-bg {
+  background-color: $c-moradoclaro;
+}
+.blue-bg {
+  background-color: $c-azuloscuro;
+}
+.blue-light-bg {
+  background-color: $c-azulclaro;
+}
+.grey-bg {
+  background-color: $c-grey;
+}
+.blue-form-bg {
+  background-color: $c-azulform;
+}
+.newsletter-bg {
+  background-image: url(img/newsletter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@include respond-above(lg) {
+  .newsletter-bg {
+    background-image: url(img/newsletter-bg-horizontal.png);
+  }
+}

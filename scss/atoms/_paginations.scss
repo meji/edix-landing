@@ -1,0 +1,34 @@
+//Pagination
+.pagination-nav {
+  width: 100%;
+  .page-link {
+    color: $c-text;
+    transition: $transition;
+    align-items: center;
+    background: transparent;
+    border: 0 none;
+    font-weight: normal;
+    padding: 0 0.75rem;
+    &:hover {
+      color: $c-moradoclaro;
+      background: transparent;
+    }
+  }
+  .page-item.active .page-link {
+    background: transparent;
+    font-weight: bold;
+    color: $c-text;
+  }
+  .page-search {
+    border-left: 1px solid $c-text;
+    margin-left: 16px;
+    padding-left: 16px;
+    form{
+      display: inline;
+    }
+    input {
+      border: 1px solid $c-text;
+      width: 3em;
+    }
+  }
+}

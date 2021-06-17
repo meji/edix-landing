@@ -1,0 +1,78 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3827381, 2019-10-22T10:33:20-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: GalanoGrotesque-Medium by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/medium/
+ * 
+ * Webfont: GalanoGrotesque-Regular by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/regular/
+ * 
+ * Webfont: GalanoGrotesque-SemiBold by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/semi-bold/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3827381
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 by Ren&#x00E9; Bieder. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("https://hello.myfonts.net/count/3a66b5");
+
+  
+// @font-face {font-family: 'Galano';
+// src: url('../fonts/3A66B5_0_0.eot');
+// src: url('../fonts/3A66B5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_0_0.woff2') format('woff2'),url('../fonts/3A66B5_0_0.woff') format('woff'),url('../fonts/3A66B5_0_0.ttf') format('truetype');
+// font-weight: 500;
+// font-style: normal;
+// }
+ 
+  
+// @font-face {font-family: 'Galano';
+// src: url('../fonts/3A66B5_1_0.eot');
+// src: url('../fonts/3A66B5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_1_0.woff2') format('woff2'),url('../fonts/3A66B5_1_0.woff') format('woff'),url('../fonts/3A66B5_1_0.ttf') format('truetype');
+// font-weight: normal;
+// font-style: normal;
+// }
+ 
+  
+// @font-face {font-family: 'Galano';
+// src: url('../fonts/3A66B5_2_0.eot');
+// src: url('../fonts/3A66B5_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_2_0.woff2') format('woff2'),url('../fonts/3A66B5_2_0.woff') format('woff'),url('../fonts/3A66B5_2_0.ttf') format('truetype');
+// font-weight: bold;
+// font-style: normal;
+// }
+
+@font-face {
+    font-family: 'Galano';
+    src: url('fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff2') format('woff2'),
+         url('fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Galano';
+    src: url('fonts/rene_bieder_-_galano_grotesque-webfont.woff2') format('woff2'),
+         url('fonts/rene_bieder_-_galano_grotesque-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant:600&display=swap');
+

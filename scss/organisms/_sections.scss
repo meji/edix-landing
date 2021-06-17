@@ -1,0 +1,191 @@
+//Encabezados
+.with-head {
+  .title,
+  .title.h2 {
+    margin-top: 0;
+    line-height: 1.1;
+    margin-bottom: 32px;
+    &.margin {
+      margin-bottom: 48px;
+    }
+  }
+  p {
+    line-height: 1.5;
+  }
+  .margin {
+    margin-bottom: 48px;
+  }
+  .text-bold {
+    line-height: 1.2;
+  }
+}
+
+//Secciones
+.section {
+  padding-top: 56px;
+  &.pd40 {
+    padding: 40px;
+  }
+  &.m-section {
+    margin-top: 56px;
+  }
+  &.coloured {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    margin-top: 72px;
+  }
+  &.counter-numbers {
+    margin-top: 32px;
+  }
+  &.geometric-pattern-bg {
+    background-image: url('img/geometric-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+  }
+  &.map-bg {
+    background-image: url('img/map.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  &.triangles-bg {
+    background-image: url(img/triangles.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: auto 100%;
+  }
+  &.triangles-right-bg {
+    background-image: url(img/triangles-right.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-size: auto 100%;
+  }
+  &.pdno {
+    padding: 0 16px;
+    margin-top: 64px;
+  }
+  &.without-item-margin {
+    margin-bottom: -16px;
+  }
+}
+//////////Secciones extendidas**//
+
+/*RWD Secciones*/
+/*ancho 100% en mobile*/
+@include respond-above(md) {
+  .extended {
+    margin-left: -34px;
+    margin-right: -34px;
+  }
+}
+@include respond-above(lg) {
+  .section {
+    padding-top: 74px;
+    &.coloured {
+      margin-top: 144px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    &.counter-numbers {
+      margin-top: 72px;
+    }
+    &.pdno {
+      padding: 0;
+      margin-top: 144px;
+    }
+    &.map-bg {
+      background-size: initial;
+    }
+  }
+  .extended {
+    margin-left: -42px;
+    margin-right: -42px;
+  }
+  .with-head {
+    .super-title {
+      font-size: 110%;
+    }
+    h2.super-title,
+    h3.super-title {
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    &.col2-image-text,
+    &.col2-text {
+      p,
+      .p {
+        padding-right: 32px;
+      }
+    }
+    &.col2-image-text.reverse img {
+      padding-right: 32px;
+    }
+  }
+  .image-text-column-module p,
+  .image-text-column-module .p {
+    padding-right: 32px;
+  }
+}
+
+@include respond-above(xl) {
+  .section {
+    padding-top: 144px;
+  }
+  .extended {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .with-head {
+    .title,
+    .title.h2 {
+      &.margin {
+        margin-bottom: 72px;
+      }
+    }
+    p {
+      line-height: 1.8;
+    }
+    .margin {
+      margin-bottom: 72px;
+    }
+    h2.super-title,
+    h3.super-title,
+    .super-title {
+      margin-bottom: 16px;
+      line-height: 1;
+      font-size: 125%;
+    }
+  }
+}
+@include respond-above(xxl) {
+  .extended {
+    margin-left: -64px;
+    margin-right: -64px;
+  }
+  .image-text-column-module p,
+  .image-text-column-module .p {
+    line-height: 1.8;
+  }
+}
+@include respond-above(xxxl) {
+  .with-head {
+    .super-title {
+      font-size: 1.68rem;
+    }
+  }
+}
+@include respond-below(md) {
+  .extended {
+    margin-left: -16px;
+    margin-right: -16px;
+    &.b-radius {
+      border-radius: 0;
+    }
+  }
+}

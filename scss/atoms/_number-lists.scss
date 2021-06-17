@@ -1,0 +1,73 @@
+.number-list{
+  .col-12{margin-bottom: 40px; display: flex;}
+  p{ margin-bottom: 40px;}
+  .counter{
+    font-size: 350%;
+    font-weight: bold;
+    width: 30%;
+    text-align: left;
+    display: inline-flex;
+    flex: 0 0 40px;
+    margin-right: 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  .h6{margin: 0 0 8px;}
+  margin-bottom: -56px;
+}
+
+
+@include respond-above(md){
+  .number-list{
+    .counter{font-weight: bold; width: auto; margin-right: 24px; line-height: 1;  text-align: center; display: block; }
+    .text{text-align: center;}
+  }
+}
+@include respond-above(xl){
+  .number-list{/*margin-bottom: -88px; margin-top: -52px;*/
+    .col-12{margin-bottom: 40px; display: flex;}
+    p{text-align: left;}
+    span{display: block; width: auto;}
+    .counter{font-size: 350%;  text-align: left; display: inline-flex; flex: 0 0 35px; margin-right: 12px;}
+    .text{text-align: left; padding-right: 16px;}
+  }
+}
+.home {
+  .number-list .counter{flex: 0 0 100px;}
+}
+@include respond-above(md) {
+  .home {
+    .number-list {
+      .col-12 {
+        display: block;
+      }
+    }
+  }
+}
+@include respond-above(xl){
+  .home {
+    .number-list {
+      .col-12 {
+        margin-bottom: 40px; display: flex;
+      }
+    }
+  }
+}
+//Sobre edix
+@include respond-above(md){
+  .number-list:not(.home) {
+    .text{text-align: left}
+    .counter{
+      display: flex;
+      flex: 1;
+      justify-content: center;}
+  }
+}
+@include respond-above(xxl){
+  .number-list:not(.home) {
+    .counter{
+      flex: 0 0 64px;
+    }
+  }
+}

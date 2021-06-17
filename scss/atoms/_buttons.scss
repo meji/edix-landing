@@ -1,0 +1,231 @@
+///////////BUTTONS
+.btn {
+  font-size: 0.8125rem;
+  text-align: center;
+  display: block;
+  padding: 11.5px 16px;
+  border-radius: 4px;
+  background: $c-morado;
+  color: #fff;
+  border: 2px solid $c-morado;
+  border-color: $c-morado;
+  font-weight: 600;
+  min-width: 165px;
+  width: 100%;
+  line-height: 1;
+  &:hover {
+    background-color: #032258;
+    border-color: #032258;
+    transition: 0.25s;
+    color: #fff;
+    cursor: pointer;
+  }
+  &.btn-secondary {
+    background: #fff;
+    border: 2px solid $c-morado;
+    color: $c-morado;
+    &:hover {
+      background: $c-morado;
+      color: #fff;
+    }
+    &.transparent{
+      background: transparent;
+      &:hover {
+        background: $c-morado;
+      }
+    }
+  }
+  &.btn-white {
+    color: $c-morado;
+    background: #fff;
+    border-color: #fff;
+    &:hover {
+      background: $c-moradoclaro;
+      color: #fff;
+      border-color: $c-moradoclaro;
+    }
+  }
+  &.btn-terciary {
+    color: #fff;
+    background: $c-azuloscuro;
+    border-color: $c-azuloscuro;
+    &:hover {
+      background: #fff;
+      color: $c-azuloscuro;
+      cursor: pointer;
+    }
+  }
+  &.btn-cta {
+    background: $c-turqoise;
+    border-color: $c-turqoise;
+    &:hover {
+      background: #039684;
+      border-color: #039684;
+    }
+  }
+  &.btn.small:not(.btn-cta) {
+    height: 40px !important;
+    padding: 0 32px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.shadow,
+  &.shadow:hover {
+    color: #333;
+    background: #fff;
+    box-shadow: $box-shadow-small;
+    border: 0 none;
+  }
+  &.blue-light {
+    color: #333;
+    background: $c-azulform;
+    border: 0 none;
+  }
+}
+.text-white {
+  .btn:not(.btn-cta):not(#info-mobile-btn) {
+    color: $c-morado;
+    background: white;
+    border-color: white;
+    &:hover {
+      background: $c-moradoclaro;
+      transition: $transition;
+      border-color: $c-moradoclaro;
+      color: #fff;
+    }
+  }
+  .btn.btn-secondary:not(.btn-cta):not(#info-mobile-btn) {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background: #fff;
+      color: $c-morado;
+    }
+  }
+}
+
+input[type='submit'] {
+  font-size: 0.8125rem;
+  margin-top: 32px;
+  -webkit-appearance: unset;
+  appearance: unset;
+}
+
+#help_btn {
+  margin: 0 auto;
+  background: $c-morado;
+  border-color: $c-morado;
+  color: #ffffff;
+  position: fixed;
+  left: 16px;
+  bottom: 24px;
+  width: auto;
+  right: auto;
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transition: $transition;
+  &:not(.double).white {
+    background: #fff;
+    color: $c-morado;
+    &:hover {
+      color: #fff;
+      background: $c-morado;
+      transition: $transition;
+    }
+  }
+  &:hover {
+    background: #fff;
+    color: $c-morado;
+    transition: $transition;
+    border-color: #fff;
+  }
+  &.hide {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+.button-container {
+  margin: 0;
+}
+.link-primary {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+.link-primary-container {
+  margin: 24px 0 0 0;
+}
+.shoot-link,
+.shoot-link-blank {
+  cursor: pointer;
+}
+.purple-bg .link-primary:hover,
+.line-link:hover,
+.text-white .line-link:hover {
+  color: #fff;
+  position: relative;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-top: 2px;
+    position: absolute;
+    animation: 0.5s in-out forwards;
+  }
+}
+
+//*Buttons RWD*/
+@include respond-above(md) {
+  .btn,
+  #help_btn {
+    width: auto;
+    font-size: 0.875rem;
+    padding: 15px 32px;
+    display: inline-block;
+  }
+  .btn.full-btn {
+    width: 100%;
+  }
+  input[type='submit'] {
+    margin-top: 0;
+    font-size: 0.875rem;
+  }
+  .home .button-container #help_btn.white {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+}
+@include respond-above(lg) {
+  .btn,
+  #help_btn {
+    padding: 15px 32px;
+  }
+  .btn-container {
+    margin-top: 56px;
+  }
+  .link-primary-container {
+    margin: 56px 0 0 0;
+  }
+  #help_btn {
+    position: initial;
+    margin: 0;
+  }
+}
+@include respond-above(xxl) {
+  #help_btn {
+    bottom: 21px;
+  }
+}
+
+#info-mobile-btn {
+  position: absolute;
+  bottom: 16px;
+  width: calc(100% - 32px);
+  left: 16px;
+}

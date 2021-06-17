@@ -1,0 +1,33 @@
+#hero-landing {
+  .career-icon {
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 48px;
+    margin-top: 40px;
+  }
+  h1 {
+    display: inline-block;
+  }
+  .data-container {
+    background: none;
+  }
+}
+
+#hero-landing.hero.hero-big .hero-bg:after {
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.35;
+}
+
+@include respond-above(md) {
+  #hero-landing {
+    .career-icon {
+      max-width: none;
+      margin-top: auto;
+    }
+  }
+  header#site-header.nav-down + section#hero-landing,
+  header#site-header.white.small + section#hero-landing {
+    margin-top: 0;
+  }
+}

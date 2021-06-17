@@ -1,0 +1,25 @@
+.imagen-texto-bold-boton {
+  .link-primary {
+    margin-left: 16px;
+  }
+}
+@include respond-below(lg) {
+  .imagen-texto-bold-boton {
+    > div {
+      order: 2;
+    }
+
+    > div:nth-child(2) {
+      order: 1;
+    }
+    img {
+      display: block;
+      margin-bottom: 16px;
+    }
+    .link-primary {
+      display: block;
+      margin: 16px 0 0 0;
+      text-align: center;
+    }
+  }
+}

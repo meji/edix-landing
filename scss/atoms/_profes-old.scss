@@ -1,0 +1,93 @@
+//////////PROFES
+.profe-item-old {
+  margin-bottom: 32px;
+  cursor: pointer;
+  position: relative;
+  figure {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0;
+    img {
+      display: block;
+      min-width: 100%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+      height: 50%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      text-align: left;
+      padding: 16px;
+      margin: 0;
+      color: #fff;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      justify-content: flex-end;
+      p {
+        margin: 0 0 8px;
+        line-height: 1;
+        font-weight: 600;
+        &.position {
+          display: none;
+          font-weight: normal;
+        }
+      }
+      .name {
+        margin: 0 0 8px;
+        line-height: 1;
+      }
+      button {
+        display: none;
+        width: 100%;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background: $c-morado;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    &:hover {
+      &:before {
+        transition: $transition;
+        opacity: 0.6;
+      }
+      //&:after{content:url(img/plus-white.svg); background: transparent;  opacity: 1; width: 48px; height: 48px; position: absolute; top: 50%; left: 50%; bottom: auto; margin: -24px 0 -0 -24px;  z-index:2;}
+      figcaption {
+        justify-content: space-between;
+        p.position,
+        button {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include respond-above(lg) {
+  .profe-item-old figure {
+    border-radius: 8px;
+  }
+}

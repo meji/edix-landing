@@ -1,0 +1,7 @@
+@include respond-below(sm) {
+  #discount {
+    p.margin {
+      margin-bottom: 16px;
+    }
+  }
+}

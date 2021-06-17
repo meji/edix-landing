@@ -1,0 +1,57 @@
+.term-finder {
+  display: flex;
+  padding: 46px 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  p {
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  input {
+    margin-bottom: 16px;
+    display: block;
+  }
+  //.btn {
+  //  min-width: 0;
+  //  padding: 0 16px;
+  //  height: 42px;
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  img,
+  //  svg {
+  //    width: 30px;
+  //  }
+  //}
+}
+@include respond-above(md) {
+  .term-finder {
+    form {
+      display: inline-flex;
+      width: auto;
+      margin-left: 16px;
+      height: 72px;
+      input {
+        width: 550px;
+        height: 72px;
+      }
+      .btn {
+        width: 72px;
+        height: 72px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-above(lg) {
+  p {
+    margin: 0;
+  }
+  .term-finder {
+    flex-direction: row;
+  }
+}

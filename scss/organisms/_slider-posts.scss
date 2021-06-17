@@ -1,0 +1,41 @@
+//////////Slider Posts
+.slider-posts {
+  .slider {
+    margin-top: 56px;
+    .img-container {
+      margin: 0 auto 24px;
+      img {
+        border-radius: $border-radius;
+      }
+    }
+    .cormorant {
+      font-family: $font-secondary;
+      font-style: italic;
+      line-height: 1.2;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
+@include respond-above(lg) {
+  .slider-posts {
+    .slider {
+      margin-top: 48px;
+      .img-container {
+        float: left;
+        margin: 0 56px 0 0;
+        margin-bottom: 0;
+        img {
+          border-radius: $border-radius-lg;
+        }
+      }
+      .cormorant {
+        font-family: $font-secondary;
+        font-style: italic;
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

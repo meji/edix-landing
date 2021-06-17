@@ -1,0 +1,17 @@
+.landing-counters.becas {
+  background: $c-azulform;
+  color: #000;
+  padding: 32px;
+  .col-6,
+  .col-12 {
+    margin-bottom: 16px;
+  }
+}
+@include respond-above(lg) {
+  .landing-counters.becas {
+    .col-6:first-child,
+    .col-6:nth-child(2) {
+      margin-bottom: 48px;
+    }
+  }
+}

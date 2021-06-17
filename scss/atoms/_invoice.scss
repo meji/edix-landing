@@ -1,0 +1,15 @@
+/** INVOICE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
+#invoice{width: 900px; margin: auto; background: #ccc;
+  section{padding: 60px 120px; margin: 0;
+    h1{margin: 60px 0 0;}
+    h3{line-height: 1;}
+    small{font-size: 14px; display: block;}
+    &.blue-bg{background-image: url(img/invoice-triangle.svg); background-repeat: no-repeat; background-position: right bottom -90px}
+    &.white{background: #fff;}
+    &.bg-form{background: $c-azulform}
+  }
+  #footer{margin: 0;
+    section{border-radius: 0 !important;}
+  }
+}

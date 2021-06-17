@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(-750.000000, -1401.000000)" fill="#000000" fill-rule="nonzero">
+        <g id="Group" transform="translate(749.000000, 1400.000000)">
+            <rect id="Rectangle" transform="translate(11.989581, 11.990509) rotate(-135.605335) translate(-11.989581, -11.990509) " x="-2.83410042" y="10.7545291" width="29.6473631" height="2.47195968" rx="1.23597984"></rect>
+            <rect id="Rectangle" transform="translate(11.990970, 11.990492) rotate(134.419160) translate(-11.990970, -11.990492) " x="-2.83271172" y="10.7545628" width="29.6473631" height="2.47185909" rx="1.23592955"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="scss/utils/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="../css/style.css?v12" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+  </head>
+  <body class="home">
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="site-header" class="closed">
+        <div class="container">
+          <a id="logo" href="/" title="Ir a la home">
+            <img src="../images/logo_edix.svg" alt="logo Edix" title="Edix, Formación" />
+          </a>
+          <nav>
+            <ul>
+              <li class="active"><a title="Qué es Edix" href="">Sobre Edix</a></li>
+              <li><a title="Cursos, carreras y formación" href="">Nuestras Carreras</a></li>
+              <li><a title="Empresas y empleos" href="">Club de empresas</a></li>
+              <li><a title=" Alumnos y profesores Edix" href="">Comunidad</a></li>
+              <li><a title="Blog Edix" href="">Blog</a></li>
+            </ul>
+          </nav>
+          <nav class="buttons">
+            <ul>
+              <li>
+                <span title="Acceder" class="btn small shoot-link-blank" href="" class="btn"
+                  ><img src="../images/user-icon.svg" alt="Acceder" title="Acceder" /><span
+                    >Acceder</span
+                  ></span
+                >
+              </li>
+              <li>
+                <span
+                  title="Te llamamos"
+                  class="btn small"
+                  data-target="#modal-phone"
+                  data-toggle="modal"
+                  ><img src="../images/phone-icon.svg" alt="Te llamamos" title="Te llamamos" /><span
+                    >Te llamamos</span
+                  ></span
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div id="nav-icon">
+            <div></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO HOME
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <section id="hero-home" class="hero hero-big text-white">
+        <picture class="hero-bg">
+          <!-- tatamiento vertical -->
+          <source media="(orientation:portrait)" srcset="../images/ejemplo-vertical.jpg" />
+          <!-- tatamiento version_horizontal -->
+          <img
+            alt="alt de la imagen"
+            title="title de la imagen"
+            src="../images/ejemplo-horizontal.jpg"
+          />
+          <noscript>
+            <img
+              alt="alt de la imagen"
+              title="title de la imagen"
+              src="../images/ejemplo-horizontal.jpg"
+            />
+          </noscript>
+        </picture>
+        <div class="data-container d-flex">
+          <div class="container justify-content-center align-self-center">
+            <div class="row">
+              <p class="h1 col-11 col-xl-7 col-xxl-7 col-xxxl-6">
+                Profesiones digitales para empleos con futuro
+              </p>
+            </div>
+            <div class="row">
+              <h1 class="col-11 col-xl-7 col-xxl-7 col-xxxl-6 p">
+                Formamos a los Expertos Digitales que las empresas necesitan hoy. En tan sólo 10
+                meses y con 6 meses de prácticas garantizadas en empresas, obtendrás una titulación
+                compartida Edix+UNIR. Únete a la Revolución Profesional y verás como #TodoVaACambiar
+              </h1>
+              <p class="unir col-5 col-xl-12">
+                <img src="../images/logo_unir_b.svg" alt="logo Unir" title="logo Unir" />
+              </p>
+              <!--           <p class="button-container col-12"><span id="help_btn" class="btn white shoot-link" data-href="#" title="Te ayudamos a elegir">Te ayudamos a elegir</span></p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENIDO
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <main id="main" class="container">
+        <!-- Módulo 1 Claim module
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="home1" class="col2-image-text with-head row section">
+          <div class="col-lg-6">
+            <p class="super-title">Llega la formación útil</p>
+            <h2 class="title h2">Somos el instituto de expertos digitales de la UNIR.</h2>
+            <div class="geometric-container d-sm-block d-md-block d-lg-none">
+              <img src="../images/geometric-home.svg" alt="decoración" title="decoración" />
+            </div>
+            <p>
+              Nacemos con un fuerte componente social: creemos en el potencial de las personas sin
+              atender a su edad o a su estatus económico y queremos darles las herramientas
+              necesarias para convertirlas en los expertos digitales que hoy necesitan las empresas
+            </p>
+            <p class="link-primary-container">
+              <a class="link-primary" href="#" title="Conoce más sobre nosotros"
+                >Conoce más sobre nosotros</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-6 geometric-container d-none d-lg-block">
+            <img src="../images/geometric-home.svg" alt="decoración" title="decoración" />
+          </div>
+        </section>
+
+        <!-- Módulo 2 Contadores
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="home2" class="number-list row section">
+          <h3 class="col-12 col-md-4 p">
+            <span class="counter">10</span>
+            <div class="text">
+              <span>meses de formación en plataforma online con expertos digitales.</span>
+            </div>
+          </h3>
+          <h3 class="col-12 col-md-4 p">
+            <span class="counter">500</span>
+            <div class="text">
+              <span>horas de prácticas en las empresas más relevantes del sector.</span>
+            </div>
+          </h3>
+          <h3 class="col-12 col-md-4 p">
+            <span class="counter">200</span>
+            <div class="text">
+              <span>euros al mes. Puedes fraccionar el pago en 3, 6 o 10 cuotas.</span>
+            </div>
+          </h3>
+        </section>
+
+        <!-- Módulo 3 Desubre nuestras carreras
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="home3" class="text icon-list with-head section">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <p class="super-title">Carreras únicas</p>
+              <h2 class="title h2">Carreras pensadas en tu futuro laboral.</h2>
+              <p class="margin">
+                Planteamos programas en los que el desarrollo de las habilidades propias del sector
+                son la clave del aprendizaje.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="career-card icon-left">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="career-card icon-left">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="career-card icon-left">
+                <span class="label">¡Quedan 2 plazas!</span>
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="career-card icon-left">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="career-card icon-left">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <p class="text-center col-12 btn-container">
+              <a class="btn btn-secondary" title="Descubre todas nuestras carreras" href="#"
+                >Descubre todas nuestras carreras</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- Módulo 4 Prácticas remuneradas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section
+          id="home4"
+          class="extended purple-bg geometric-pattern-bg text-white coloured with-head section b-radius"
+        >
+          <div class="container">
+            <div class="col-12 col-lg-6 col-xl-7">
+              <p class="super-title">Practicas en las empresas más relevantes</p>
+              <h3 class="title h2 nm">Prácticas remuneradas aseguradas.</h3>
+              <p>
+                Contamos con un modelo totalmente adaptado a los perfiles y al talento que buscan
+                las empresas hoy en día.
+              </p>
+              <ul class="logos list-inline">
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../images/logo-empresa.svg"
+                    alt="Nombre de empresa"
+                    title="Nombre de empresa"
+                  />
+                </li>
+              </ul>
+              <p class="link-primary-container">
+                <a class="link-primary" href="#" title="Conoce nuestro club de empresas"
+                  >Conoce nuestro club de empresas</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Módulo 5 Desubre nuestras carreras
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="home5" class="text icon-list icon-list-small with-head section">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="super-title p">Proximas carreras</h2>
+              <p class="title h2 margin">Un giro en tu carrera es posible.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-xl-4">
+              <div class="career-card icon-left plain">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name-inactive.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="career-card icon-left plain">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name-inactive.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="career-card icon-left plain">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-name-inactive.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="career-card icon-left plain">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-agriculturaganaderiadigital-inactive.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="career-card icon-left plain">
+                <div class="icon-container">
+                  <img
+                    src="../images/career-icons/icon-gestionproyectosdigitales-inactive.svg"
+                    alt="Experto en Gestión de comercio electrónico"
+                    title="Experto en Gestión de comercio electrónico"
+                  />
+                </div>
+                <h3 class="card-title p">
+                  <a href="http://meji.es/edix" title="Esperto en Gestión de comercio Electrónico"
+                    ><span>Experto en </span>Gestión de comercio electrónico</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Módulo  Newsletter
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section
+          id="newsletter"
+          class="extended form-inside text-white with-head section triangles-bg blue-bg coloured b-radius"
+        >
+          <div class="container">
+            <div class="row justify-content-xl-end">
+              <div class="col-12 col-lg-12 col-xl-11">
+                <p class="super-title">¿Seguimos en contacto?</p>
+              </div>
+            </div>
+            <div class="row justify-content-xl-end">
+              <div class="col-12 col-lg-6 col-xl-5">
+                <p class="title h4 nm">Te mantenemos al día de nuestras novedades</p>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-6">
+                <form>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="EMAIL"
+                      placeholder="Escribe tu email"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-xl-7">
+                      <div class="form-check">
+                        <label class="custom-control-label" for="legal">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input check-button__input"
+                            id="legal"
+                          />
+                          <span class="check-button__control"></span>
+                          <span class="check-button__label"
+                            >He leído y acepto las
+                            <a href="#" title="Ver las condiciones legales"
+                              >condiciones legales</a
+                            ></span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <p class="col-xl-5 text-right">
+                      <input class="btn btn-secondary" type="submit" value="Suscríbete" />
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <footer id="footer" class="container">
+        <section id="site-black-footer" class="extended">
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="footer-title">
+                  Sobre Edix
+                </p>
+              <p>
+                Somos el instituto de expertos digitales de la UNIR. Creemos en el potencial de las
+                personas y queremos darles las herramientas necesarias.
+              </p>
+              <p class="footer-link">
+                <a href="#" title="Conoce Edix, la Revolución Profesional"
+                  >Conoce más sobre nosotros</a
+                >
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <p class="footer-title">Resuelve tus dudas</p>
+              <p>
+                Si tienes dudas sobre nuestras carreras, metodología o proceso de matriculación
+                tenemos la respuesta que buscas.
+              </p>
+              <p class="footer-link">
+                <a href="#" title="Qué necesitas para estudiar en Edix">Preguntas frecuentes</a>
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <p class="footer-title">Más información</p>
+              <p class="mid-margin">
+                Si lo necesitas escríbenos a
+                <a href="mailto:info@edix.com" title="Enviar email a info@edix.com"
+                  >info@edix.com</a
+                >
+                o llama a <a href="tel:916543210" title="Llamar">916 543 210</a>
+              </p>
+              <p class="small">(Horario: de lunes a viernes de 10:00 a 18:00)</p>
+              <ul class="social inline">
+                <li>
+                  <span class="shoot-link-blank" data-href="#" title="Ir a Instagram"
+                    ><img
+                      src="../images/instagram.svg"
+                      alt="logo de Instagram"
+                      title="logo de Instagram"
+                  /></span>
+                </li>
+                <li>
+                  <span class="shoot-link-blank" data-href="#" title="Ir a Twitter"
+                    ><img src="../images/twitter.svg" alt="logo de Twitter" title="logo de Twitter"
+                  /></span>
+                </li>
+                <li>
+                  <span class="shoot-link-blank" data-href="#" title="Ir a Linkedin"
+                    ><img
+                      src="../images/linkedin.svg"
+                      alt="logo de Linkedin"
+                      title="logo de Linkedin"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="site-white-footer" class="extended">
+          <div class="row">
+            <p class="col-12 col-lg-4 legal">
+              <a
+                href="#"
+                title="Privacidad, cookies, condiciones legales y condiciones de contratación"
+                >Privacidad, cookies y condiciones legales</a
+              >
+            </p>
+            <div class="col-7 col-lg-3">
+              <p class="copy">Copyright © 2019 Edix</p>
+            </div>
+            <div class="col-5 col-lg-5">
+              <p class="unir-footer"><img src="../images/logo_unir.svg" alt="Logo Unir" /></p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <!-- modal container-->
+    <div
+      id="modal-phone"
+      class="modal fade small"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar" />
+          </button>
+          <div class="content">
+            <h4 class="mtno">¿Necesitas ayuda?</h4>
+            <p>Déjanos tu teléfono y te llamaremos.</p>
+            <!--[if lte IE 8]>
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2-legacy.js"
+              ></script>
+            <![endif]-->
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/v2.js"
+            ></script>
+            <script>
+              hbspt.forms.create({
+                portalId: '6185067',
+                formId: '69a271a5-7bad-46a9-a0ea-904419a0b110',
+                onFormReady: function ($form) {
+                  $('input.hs-input').addClass('form-control')
+                  $('input[type="submit"]').addClass('btn').removeClass('form-control')
+                }
+              })
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/swiper.min.js?v12"></script>
+    <script src="../js/jquery.touchSwipe.min.js?v12"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?v12"></script>
+  </body>
+</html>

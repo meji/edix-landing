@@ -1,0 +1,113 @@
+.number-list-new {
+  h3,
+  h4,
+  h5,
+  .h4 {
+    margin: 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .counter {
+      font-weight: 600;
+      font-size: 48px;
+      margin-right: 32px;
+      line-height: 1;
+      position: relative;
+      width: 120px;
+      text-align: right;
+      background: url('img/cuadrado-morado.svg') no-repeat top 0 left 65%;
+      background-size: 20px;
+      small {
+        position: absolute;
+        top: -10px;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+    }
+    .text {
+      font-weight: 300;
+      line-height: 1;
+      &.down {
+        align-self: flex-end;
+      }
+    }
+    strong.text.down {
+      font-weight: 600;
+      margin-left: -32px;
+      margin-right: 16px;
+    }
+  }
+  .col-12:first-child {
+    h3,
+    h4,
+    h5,
+    .h4 {
+      .counter {
+        background-image: url('img/ellipse-morada.svg');
+      }
+    }
+  }
+  .col-12:nth-child(2) {
+    h3,
+    h4,
+    h5,
+    .h4 {
+      .counter {
+        background-image: url('img/triangulo-azul.svg');
+        background-position: bottom 0 left 77%;
+      }
+    }
+  }
+  .col-12:last-child {
+    h3,
+    h4,
+    h5,
+    .h4 {
+      .counter {
+        background-image: url('img/cuadrado-morado.svg');
+        background-position: top 6px left 40%;
+      }
+    }
+  }
+}
+
+@include respond-above(lg) {
+  .number-list-new {
+    h3,
+    h4,
+    h5,
+    .h4 {
+      margin: 0;
+      justify-content: center;
+      .counter {
+        font-size: 86px;
+        text-align: left;
+        width: auto;
+        margin-right: 16px;
+      }
+      strong.text.down {
+        margin-left: -16px;
+      }
+    }
+    .col-12:first-child {
+      h3,
+      h4,
+      h5,
+      .h4 {
+        .counter {
+          background-position: top 0 left 40%;
+        }
+      }
+    }
+    .col-12:last-child {
+      h3,
+      h4,
+      h5,
+      .h4 {
+        .counter {
+          background-position: top 6px right 6px;
+        }
+      }
+    }
+  }
+}

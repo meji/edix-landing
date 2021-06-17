@@ -1,0 +1,25 @@
+///////////OFERTA
+.offer{
+  .pd64{position: relative; margin-bottom: 24px;}
+  .h4{line-height: 1}
+  p{line-height: 1.4;
+    &.text{height: 40px;}
+  }
+  .number{font-weight: bold; font-size: 475%; line-height: 1; margin-bottom: 0;}
+  .label{background: $c-azuloscuro;
+    &:before{border-left-color: $c-moradoclaro;}
+  }
+}
+@include respond-above(md){
+  .offer .number{font-size: 562.0%;}
+}
+@include respond-above(lg){
+  .pd64{margin-bottom: 0;}
+}
+@include respond-above(xl){
+  .offer .label{margin-left: 6px;}
+}
+
+@include respond-above(xxl){
+  .offer .label{margin-left: 16px;}
+}

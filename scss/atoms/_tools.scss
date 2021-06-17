@@ -1,0 +1,148 @@
+.hidden {
+  display: none;
+}
+.mtno {
+  margin-top: 0 !important;
+}
+.mno {
+  margin: 0 !important;
+}
+.mt110 {
+  margin-top: 110px;
+}
+.mt152 {
+  margin-top: 152px;
+}
+.head-margin {
+  margin-bottom: 56px;
+}
+.pd64 {
+  padding: 16px !important;
+}
+.b-radius {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.v-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; //centrado vertical
+  &.column {
+    flex-direction: column;
+  }
+}
+.collapse:not(.show) {
+  //Colapse en tabs
+  display: none;
+}
+.separator {
+  border-top: 2px solid $c-azulform;
+  clear: both;
+}
+
+.columnado4 {
+  column-count: 2;
+  column-gap: 32px;
+  list-style-type: none;
+  li {
+    margin-bottom: 24px;
+    padding: 0;
+    line-height: 1.2;
+  }
+}
+
+.purple {
+  color: $c-morado;
+}
+
+@include respond-above(md) {
+  .pd64 {
+    padding: 24px !important;
+  }
+  .text-left.text-md-right {
+    text-align: right;
+  }
+}
+@include respond-above(lg) {
+  .is-fixed {
+    position: fixed;
+    top: 110px;
+  }
+  .pd64 {
+    padding: 64px !important;
+  }
+  .head-margin {
+    margin-bottom: 84px;
+  }
+  .columnado4 {
+    column-count: 4;
+  }
+  .b-radius {
+    border-radius: 8px;
+  }
+}
+
+//CHAT
+body #hubspot-messages-iframe-container {
+  z-index: 999995;
+}
+
+.flex-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no-animation {
+  animation: none !important;
+}
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+.border-radius {
+  border-radius: $border-radius-lg;
+}
+
+form.sticky {
+  margin-bottom: 64px;
+}
+
+@include respond-above(lg) {
+  .sticky-container {
+    min-height: 100%;
+  }
+  .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    &.up {
+      top: 0;
+    }
+  }
+  form.sticky {
+    margin-bottom: 0;
+  }
+}
+
+img.rounded {
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+}
+.right-col-module {
+  padding: 24px;
+}
+
+.text-shadowed {
+  h1,
+  p,
+  li {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+}
+
+.no-text-shadow {
+  text-shadow: none;
+}

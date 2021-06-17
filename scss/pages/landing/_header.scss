@@ -1,0 +1,91 @@
+/*Header en landing*/
+header#site-header.landing {
+  p.career-title {
+    display: none;
+  }
+  .buttons {
+    li {
+      .btn {
+        //padding: 11px 8px 12px;
+        span {
+          display: inline-block !important;
+        }
+      }
+      .btn.double {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        img,
+        svg {
+          margin-right: 8px;
+          width: 24px;
+          height: 24px;
+        }
+
+        strong {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          small {
+            font-weight: 300;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-above(sm) {
+  header#site-header.landing {
+    &.small {
+      padding-top: 12px;
+    }
+  }
+}
+@include respond-above(lg) {
+  header#site-header.landing {
+    .buttons {
+      li {
+        .btn.double {
+          display: flex;
+        }
+        .btn.btn-cta {
+          padding: 16px 24px;
+        }
+      }
+    }
+    &.small.white {
+      padding-top: 24px;
+      #logo {
+        margin-right: 0;
+      }
+      p.career-title {
+        margin: 0 auto 0 0;
+        line-height: 1.2;
+        font-weight: 600;
+        display: block;
+        margin-left: 16px;
+        small {
+          display: block;
+          font-size: 0.7rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+@include respond-above(xxl) {
+  header#site-header.landing {
+    .buttons {
+      li {
+        .btn.btn-cta {
+          padding: 15px 24px;
+        }
+      }
+    }
+  }
+}

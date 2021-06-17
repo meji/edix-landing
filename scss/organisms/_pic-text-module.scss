@@ -1,0 +1,26 @@
+///////////MÓDULO CON FOTO Y TEXTO EN COLUMNA
+#main .image-text-modules{
+  margin-bottom: -56px;
+  .image-text-column-module{
+    .h4{margin-top: 0; line-height: 1.4;}
+    margin-bottom: 56px;
+    figure{margin: 0 auto; position:relative; overflow: hidden;
+      // &:before{content: ''; position: absolute;top:0; left: 0; width: 100%; height: 100%; z-index: 1; @include gradient_foto; opacity: 0.4;}
+      figcaption{text-align: left;color: #000;  font-weight: bold; z-index: 2; font-size: 100%; margin-top: 24px;
+        .p{margin: 0; font-weight: bold; line-height: 1.2;}
+      }
+      img{display: block; }
+    }
+  }
+}
+@include respond-above(lg){
+  #main .image-text-modules{
+    margin-bottom: -56px;
+    .image-text-column-module{
+      margin-bottom: 96px;
+    }
+  }
+}
+@include respond-above(xxl){
+  #main .image-text-modules .image-text-column-module figure figcaption{margin-top: 32px;}
+}

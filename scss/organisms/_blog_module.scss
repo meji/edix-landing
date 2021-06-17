@@ -1,0 +1,152 @@
+//La base es el promo module del matrix
+.blog-module {
+  margin-bottom: 24px;
+  position: relative;
+  cursor: pointer;
+  .title,
+  .blog-title {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 16px;
+    a {
+      color: $c-text;
+    }
+  }
+  .date {
+    margin-bottom: 0;
+    color: $c-grey-text;
+  }
+  .img-container {
+    margin: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    &.rounded {
+      border-radius: $border-radius-lg;
+      overflow: hidden;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &.overlay {
+    padding-top: 130px;
+    p {
+      @include text-shadow-normal;
+    }
+    .img-container {
+      border-radius: $border-radius;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #000;
+      img {
+        opacity: 0.85;
+      }
+    }
+    .data .date {
+      color: white;
+    }
+    .title a {
+      color: #fff;
+    }
+    &:hover {
+      .img-container {
+        background: $c-morado;
+        img {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+  &.contained {
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    .data {
+      padding: 24px;
+    }
+    &:hover:not(.overlay) {
+      .data {
+        background: $c-morado;
+        color: #fff;
+        .title a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.normal-module {
+    p.date {
+      margin: 8px 0;
+    }
+    &.small {
+      margin-top: 48px;
+      p.date {
+        margin-top: 0;
+      }
+    }
+    &.shadowed {
+      padding: 48px 32px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      border-radius: $border-radius-lg;
+      margin-bottom: 32px;
+      height: calc(100% - 32px);
+    }
+    &:hover {
+      .title a {
+        color: $c-morado;
+      }
+    }
+  }
+}
+
+.blog-category-row {
+  .blog-module {
+    margin-bottom: 72px;
+  }
+}
+
+@include respond-above(md) {
+  .col-12 .blog-module.contained .data {
+    padding: 48px;
+  }
+  .col-lg-6 .blog-module.overlay {
+    padding-top: 174px;
+  }
+
+  .align-items-stretch .blog-module.contained {
+    height: 100%;
+    .data {
+      height: 100%;
+    }
+  }
+  .blog-module.contained {
+    height: calc(100% - 24px);
+  }
+  .blog-module.normal-module.small .img-container {
+    height: 100%;
+  }
+}
+
+@include respond-above(xl) {
+  .blog-category-row {
+    .blog-module {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+@include respond-below(md) {
+  .blog-home-row {
+    .mb-4 {
+      margin-bottom: 0 !important;
+    }
+  }
+}

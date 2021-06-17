@@ -1,0 +1,16 @@
+//////////LABELs
+.label{background: $c-morado; border-top-right-radius: 4px; padding: 4px 8px 4px 16px; font-size: 75%; position: absolute; right: 0; top: 0; color: #fff; font-weight: bold;
+  &:before{content:''; width: 0; height: 0; border-left: 10px solid #fff; border-top: 8px solid transparent; border-bottom: 8px solid transparent; position: absolute; left: -1px; top: 50%; margin-top: -8px; }
+}
+@include respond-above(xl){
+  .label{padding: 8px 27px; font-size: 83.33%;}
+  .offer .label{ padding: 8px 12px;}
+}
+
+@include respond-above(xxl){
+  .offer .label{ padding: 8px 27px;}
+}
+
+.career-card .label{background-color: $c-moradoclaro;
+  &.no-plazas{background: $c-azuloscuro;}
+}

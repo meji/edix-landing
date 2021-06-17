@@ -1,0 +1,23 @@
+.form-container.becas {
+  .row {
+    display: flex;
+    .col-lg-7 {
+      order: 2;
+    }
+    .sticky-container {
+      order: 1;
+      margin-bottom: 72px;
+    }
+  }
+}
+@include respond-above(lg) {
+  .form-container.becas .row {
+    .col-lg-7 {
+      order: 1;
+    }
+    .sticky-container {
+      order: 2;
+      margin-bottom: 0;
+    }
+  }
+}

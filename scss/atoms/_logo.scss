@@ -1,0 +1,12 @@
+///////////LOGOS
+ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
+  li{display: inline-block; width: 49%; margin: 0 auto 40px; text-align: center; padding: 0 20px;
+    img{max-height: 35px; }
+  }
+}
+@include respond-above(lg){
+  ul.logos li{width: 32%;}
+}
+@include respond-above(xl){
+  ul.logos li{width: 26%;}
+}

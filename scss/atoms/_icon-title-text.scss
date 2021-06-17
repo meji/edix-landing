@@ -1,0 +1,13 @@
+@include respond-below(md) {
+  .icon-title-text-module {
+    margin-bottom: 72px;
+  }
+}
+.icon-title-text-module {
+  .icon-container {
+    margin-bottom: 16px;
+    img {
+      max-width: 140px;
+    }
+  }
+}

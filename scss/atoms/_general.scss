@@ -1,0 +1,66 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: $font-family;
+  @include font-smoothing(antialiased);
+  font-weight: 400;
+  font-size: $font-base;
+  line-height: 1.4;
+}
+:focus {
+  outline: none;
+}
+#wrapper {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: $transition;
+}
+img,
+iframe {
+  max-width: 100%;
+}
+hr {
+  height: 2px;
+  border: none;
+  background: $c-azulform;
+  margin: 16px auto 32px;
+}
+/** Gutter diferente en mobile
+  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
+
+.container {
+  @each $breakpoint, $gutter in $grid-gutter-widths {
+    @include media-breakpoint-up($breakpoint) {
+      @include make-container($gutter);
+    }
+  }
+}
+
+.row {
+  @each $breakpoint, $gutter in $grid-gutter-widths {
+    @include media-breakpoint-up($breakpoint) {
+      @include make-row($gutter);
+    }
+  }
+
+  .row > .col,
+  .row > [class*='col-'] {
+    @each $breakpoint, $gutter in $grid-gutter-widths {
+      @include media-breakpoint-up($breakpoint) {
+        @include make-col-ready($gutter);
+      }
+    }
+  }
+}
+
+//*grid utilities and paddings*//
+
+@include respond-below(md) {
+  .container {
+    max-width: none;
+    padding: 0 16px;
+  }
+}

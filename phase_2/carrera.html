@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Carrera</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="scss/utils/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/style.css?v12">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/png">
+</head>
+<body class="carrera">
+<div id="wrapper">
+  <!-- HEADER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header id="site-header" class="transparent closed no-shadow">
+    <div class="container">
+      <a id="logo" href="/" title="Ir a la home">
+        <img src="../images/logo_edix_2.svg" alt="logo Edix" title="Edix, Formación" />
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a title="Qué es Edix" href="">Sobre Edix</a></li>
+          <li><a title="Cursos, carreras y formación" href="">Nuestras Carreras</a></li>
+          <li><a title="Empresas y empleos" href="">Club de empresas</a></li>
+          <li><a title=" Alumnos y profesores Edix" href="">Comunidad</a></li>
+          <li><a title="Blog Edix" href="">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="buttons">
+        <ul>
+          <li>
+            <a title="Acceder" class="btn" href="" class="btn"
+            ><img src="../images/user-icon-new.svg" alt="Acceder" title="Acceder" /><span
+            >Acceder</span
+            ></a
+            >
+          </li>
+          <li>
+            <a title="Te llamamos" class="btn small btn-cta" href=""
+            ><img src="../images/phone-icon.svg" alt="Te llamamos" title="Te llamamos" /><span
+            >Te llamamos</span
+            ></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="nav-icon">
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO HOME
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="hero-career" class="hero hero-big hero-normal text-white">
+    <picture class="hero-bg">
+      <!-- tatamiento vertical -->
+      <source media="(orientation:portrait)" srcset="../images/ejemplo-vertical.jpg">
+      <!-- tatamiento version_horizontal -->
+      <img alt="[Nombre del curso]" title="Aprenden [Nombre del curso]" src="../images/ejemplo-horizontal.jpg">
+      <noscript>
+        <img alt="[Nombre del curso]" title="Aprenden [Nombre del curso]" src="../images/ejemplo-horizontal.jpg">
+      </noscript>
+    </picture>
+    <div class="data-container d-flex">
+      <div class="container justify-content-center align-self-center">
+        <div class="row">
+          <div class=" col-11 col-xl-8">
+            <span class="career-icon"> <img alt="Icono de Experto en Growth marketing" title="Icono de Experto en Growth marketing" src="../images/career-icons/icon-name-hero-inactive.svg"/></span>
+            <h1 class="mtno h2"><small>Experto en</small>Growth marketing</h1>
+          </div>
+        </div>
+        <div class="row">
+          <p class="col-11 col-xl-9 col-xxl-8">En nuestro curso EDIX de <strong>Experto en Growth Marketing</strong>, aprenderás de manera práctica todas las disciplinas necesarias para incrementar tráfico, captar leads (contactos) y aumentar ventas ajustándote a tu presupuesto.</p>
+        </div>
+      </div>
+      <span id="info-mobile-btn" class="btn smooth-scroll d-lg-none" data-href="#career-form" title="Te ayudamos a elegir">Solicitar información</span>
+    </div>
+  </section>
+  <!-- Contadores de info
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="landing-counters new-hero" id="landing-counters">
+    <div class="container">
+      <div class="row flex">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <p class="definition">
+              Duración
+            </p>
+            <p class="h5 main-title">10 meses</p>
+            <p class="secondary">Del 1 de enero<br/>
+              al 23 de octubre</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <p class="definition">
+              Prácticas
+            </p>
+            <p class="h5 main-title">6 meses</p>
+            <p class="secondary">¡Remuneración por,<br/>al menos, el coste del curso!</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <p class="definition">
+              Desde
+            </p>
+            <p class="h5 main-title">99€ al mes</p>
+            <p class="secondary"><span class="link-primary" data-toggle="modal" data-target="#modal-financiacion">Pago fracionado</span></p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <p class="definition">
+              Comienza
+            </p>
+            <p class="h5 main-title">Septiembre</p>
+            <p class="secondary">Próxima <br/>Convocatoria</p>
+          </div>
+          <div class="col-12 col-sm-6  col-md-4 col-lg-2">
+            <p class="definition">
+              Garantía
+            </p>
+            <p class="h5 main-title">Titulación compartida</p>
+            <p class="secondary">Formación de calidad</p>
+            <p class="images"><img class="edix" src="../images/logo_edix_2.svg" alt="Edix" title="Edix y Unir"/><span class="ampersand">&</span><img class="unir" src="../images/logo_unir.svg" alt="Edix" title="Edix y Unir"/></p>
+          </div>
+          <div class="col-12 col-sm-6  col-md-4 col-lg-2">
+            <p class="h5 main-title"></p>
+            <p class="secondary"><a class="btn" title="matricúlate ahora">Matricúlate ahora</a></p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navegación
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="career-nav">
+    <nav class="container">
+      <ul class="list-inline">
+        <li><span  class="smooths-scroll" id="informacion_link" data-href="#career-information" title="Información de la carrera">Información de la carrera</span></li>
+        <li><span class="smooths-scroll" data-href="#docentes" title="Equipo educativo">Equipo educativo</span></li>
+        <li><span class="smooths-scroll" data-href="#asignaturas-y-temas" title="Asignaturas">Asignaturas</span></li>
+        <li><span class="smooths-scroll" data-href="#alumni" title="Alumni">Alumni</span></li>
+        <li><span class="smooths-scroll" data-href="#faqs-container" title="Dudas">Dudas</span></li>
+      </ul>
+      <span id="help_btn" class="btn smooth-scroll" data-href="#career-form" title="Te ayudamos a elegir">Solicitar información</span>
+    </nav>
+  </div>
+
+  <!-- CONTENIDO
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main id="main" class="container">
+
+    <!-- Módulo 1 Módulo texto bold izquierda
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="career-information" class="with-form with-head row section">
+      <div class="col-lg-7  order-2 order-lg-1">
+        <h2 class="title h2">Aprende Growth Marketing con Edix</h2>
+        <p>Descripción amplia del curso. Extensión mínima 500 caracteres. Deberemos explicar el curso y contar qué voy a  aprender, cómo lo voy a hacer, es fácil superarlo y cuales son los objetivos del curso.</p>
+        <p class="text-bold h4 mtno margin">El Growth Marketing es una disciplina muy demandada porque facilita que la empresa crezca de forma rápida y a bajo coste.</p>
+        <h3 class="title h4">Conviértete en Ecommerce manager</h3>
+        <p class="head-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ligula pulvinar, hendrerit ante sed, ornare lorem. Aliquam quis tempus blandit. Hablaremos sobre los principales puestos de trabajo que podemos alcanzar estudiando este curso, las salidas profesionales o el tip de trabajo a realizar.</p>
+      </div>
+      <div class="col-lg-4 offset-lg-1 sticky-container order-1 order-lg-2">
+        <form id="career-form" class="box-shadow border-radius sticky">
+          <p class="h6 mtno">Información sin compromiso</p>
+          <div class="form-group">
+            <input type="text" id="name" class="form-control" placeholder="Nombre"/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="surname" class="form-control" placeholder="Apellidos"/>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" class="form-control" placeholder="Email"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-3">
+              <select class="form-control">
+                <option>+34</option>
+              </select>
+            </div>
+            <div class="form-group col-9">
+              <input type="phone" id="phone" class="form-control" placeholder="Teléfono móvil"/>
+            </div>
+          </div>
+          <hr/>
+          <div class="form-row">
+            <div class="col-12">
+              <div class="legal-text d-block grey-border">
+                EDIX EDUCACIÓN S.A. (en adelante, Edix), tratará los datos de carácter personal que nos has proporcionado con la finalidad de atender a tu solicitud de contratación de productos y/o servicios ofrecidos por Edix, así como para facilitarte el acceso al material formativo y la asistencia necesarios para cursar su carrera profesional, incluido por vía telefónica, así como para mantenerte informado de nuestra actividad. Podrás revocar el consentimiento otorgado, así como ejercitar los derechos reconocidos en los artículos 15 a 22 del Reglamento (UE) 2016/679, mediante solicitud dirigida a C/ Zurbano 73, 28010, Madrid, España, o a la siguiente dirección de correo electrónico: rgpd@edix.com, adjuntando copia de su DNI o documentación acreditativa de su identidad. Si lo deseas puede consultar información adicional y detallada sobre Protección de Datos pinchando <a href="/es/legal/#PoliticaDePrivacidad" title="Ver Política de privacidad">aquí</a>.
+              </div>
+            </div>
+          </div>
+          <div class="form-check">
+            <label class="custom-control-label" for="legal-career-form">
+              <input type="checkbox" class="custom-control-input check-button__input" id="legal-career-form">
+              <span class="check-button__control"></span>
+              <span class="check-button__label">Deseo recibir información Edix y sus productos por cualquier vía, incluida la electrónica.</span>
+            </label>
+          </div>
+          <p class="text-right submit">
+            <button type="submit" class="btn btn-primary">Solicitar información</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Módulo Módulo slider posts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="slider-posts with-head section" id="success-case">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="super-title p">Profesionales que ejercen</h2>
+          <h3 class="title h4">Conoce expertos en Growth marketing</h3>
+        </div>
+        <div class="col-12 slider">
+          <div class="swiper-container-ext alone">
+            <div class="swiper-container swiper-alone">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide item">
+                  <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                  <h4 class="h4 mno">El caso de éxito de Juan Mora</h4>
+                  <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                  <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                  <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+                </div>
+                <div class="swiper-slide item">
+                  <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                  <p class="h4 mno">El caso de éxito de Juan Mora</p>
+                  <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                  <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                  <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+                </div>
+                <div class="swiper-slide item">
+                  <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                  <p class="h4 mno">El caso de éxito de Juan Mora</p>
+                  <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                  <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                  <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+                </div>
+              </div>
+            </div>
+            <span class="swiper-button-prev swiper-button-prev-alone"></span>
+            <span class="swiper-button-next swiper-button-next-alone"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12"><p class="h4 ">Te formaremos para que accedas a los puestos de...</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="swiper-container-ext">
+            <div class="swiper-container swiper321">
+              <div class="swiper-wrapper">
+                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+                                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+                                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+                                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+                                <div  class=" swiper-slide">
+                  <div class="job-item grey-bg border-radius">
+                    <h4 class="h5 mno">Ecommerce Manager</h4>
+                    <p>Conviérte en un auténtico Community Manager… y maneja las redes y todos sus secretos profesionalmente.</p>
+                    <p class="h3 mno">79k € - 87k €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="swiper-button-prev swiper-button-prev-3"></span>
+            <span class="swiper-button-next swiper-button-next-3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo icono titulo texto nuevo
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="information-career" class="icon-title-text-module-container section row text-center">
+      <div class="col-12">
+        <h2 class="mtno head-margin">Cómo funciona el curso de Growth Marketing</h2>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="icon-title-text-module">
+          <div class="icon-container">
+            <img src="../images/valores/ilustracion1.svg" title="[title]" alt="[title]" />
+          </div>
+          <h3 class="h4 mtno">Profesores y coaches expertos</h3>
+          <p>Profesores y coaches expertos con para estar siempre acompañado.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="icon-title-text-module">
+          <div class="icon-container">
+            <img src="../images/valores/ilustracion2.svg" title="[title]" alt="[title]" />
+          </div>
+          <h3 class="h4 mtno">
+            Plataforma de formación online
+          </h3>
+          <p>En Edix creemos que la mejor formación es aquella que prepara.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="icon-title-text-module">
+          <div class="icon-container">
+            <img src="../images/valores/ilustracion3.svg" title="[title]" alt="[title]" />
+          </div>
+          <h3 class="h4 mtno">Sin experiencia o formación previa</h3>
+          <p>En Edix creemos que la mejor formación es aquella que prepara.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo Los mejores docentes
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="docentes" class="teachers with-head section">
+      <div class="row">
+        <div class="col-xl-7">
+          <h2 class="mtno">Docentes/Profesorado</h2>
+          <p class="head-margin">Aprende con los mejores profesionales del sector y aumenta tu demanda de empleo con nosotros, con Edix.</p>
+        </div>
+      </div>
+      <div class="row head-margin">
+        <div class="col-12 col-lg-7">
+          <h3 class="super-title p">Directora</h3>
+          <p class="title h4">Rosa Ibañez.</p>
+          <p>Laura es la voz de Edix, quizás por eso no calla ni un minuto. Crea y supervisa contenidos, tono, emails y redes sociales, además de organizar eventos. Es nuestra directora de Comunicación y Contenidos.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="rounded" src="../images/docente.jpg" alt="" title=""/>
+        </div>
+      </div>
+        <div class="col-12">
+          <div class="swiper-container-ext">
+            <p class="h4 mno">Profesores</p>
+            <div class="swiper-container swiper4321">
+              <div class="swiper-wrapper">
+                <div
+                  class="profe-item-old swiper-slide"
+                  data-target="#modal-profe"
+                  data-toggle="modal"
+                  data-src_mobile="images/profe-mobile-popup.jpg"
+                  data-job="Directora · Profesora · Autora"
+                  data-name="Silvia Mayo"
+                  data-linkedin="https://www.linkedin.com/in/jmmejias/"
+                  data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>"
+                >
+                  <figure class="text-white">
+                    <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo" />
+                    <figcaption>
+                      <div class="" data>
+                        <p class="position">Directora · Profesora · Autora</p>
+                        <h4 class="name h4">Silvia Mayo</h4>
+                        <p class="experience">
+                          Con esperiencia en Cabify, Twitter, Amazon y Telefónica
+                        </p>
+                      </div>
+                      <button class="btn btn-secondary">Conoce a Silvia</button>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div
+                  class="profe-item-old swiper-slide"
+                  data-target="#modal-profe"
+                  data-toggle="modal"
+                  data-src_mobile="images/profe-mobile-popup.jpg"
+                  data-job="Directora · Profesora · Autora"
+                  data-name="Silvia Mayo"
+                  data-linkedin="https://www.linkedin.com/in/jmmejias/"
+                  data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>"
+                >
+                  <figure class="text-white">
+                    <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo" />
+                    <figcaption>
+                      <div class="" data>
+                        <p class="position">Directora · Profesora · Autora</p>
+                        <h4 class="name h4">Silvia Mayo</h4>
+                        <p class="experience">
+                          Con esperiencia en Cabify, Twitter, Amazon y Telefónica
+                        </p>
+                      </div>
+                      <button class="btn btn-secondary">Conoce a Silvia</button>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div
+                  class="profe-item-old swiper-slide"
+                  data-target="#modal-profe"
+                  data-toggle="modal"
+                  data-src_mobile="images/profe-mobile-popup.jpg"
+                  data-job="Directora · Profesora · Autora"
+                  data-name="Silvia Mayo"
+                  data-linkedin="https://www.linkedin.com/in/jmmejias/"
+                  data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>"
+                >
+                  <figure class="text-white">
+                    <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo" />
+                    <figcaption>
+                      <div class="" data>
+                        <p class="position">Directora · Profesora · Autora</p>
+                        <h4 class="name h4">Silvia Mayo</h4>
+                        <p class="experience">
+                          Con esperiencia en Cabify, Twitter, Amazon y Telefónica
+                        </p>
+                      </div>
+                      <button class="btn btn-secondary">Conoce a Silvia</button>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div
+                  class="profe-item-old swiper-slide"
+                  data-target="#modal-profe"
+                  data-toggle="modal"
+                  data-src_mobile="images/profe-mobile-popup.jpg"
+                  data-job="Directora · Profesora · Autora"
+                  data-name="Silvia Mayo"
+                  data-linkedin="https://www.linkedin.com/in/jmmejias/"
+                  data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>"
+                >
+                  <figure class="text-white">
+                    <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo" />
+                    <figcaption>
+                      <div class="" data>
+                        <p class="position">Directora · Profesora · Autora</p>
+                        <h4 class="name h4">Silvia Mayo</h4>
+                        <p class="experience">
+                          Con esperiencia en Cabify, Twitter, Amazon y Telefónica
+                        </p>
+                      </div>
+                      <button class="btn btn-secondary">Conoce a Silvia</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <span class="swiper-button-prev swiper-button-prev-4"></span>
+            <span class="swiper-button-next swiper-button-next-4"></span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Módulo Social
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="social" class="trapecios-bg trapecios-social-bg extended text-white section blue-light-bg b-radius row coloured">
+      <div class="container">
+        <div class="row d-flex justify-content-end justify-content-md-between align-content-between align-content-md-center">
+          <div class="col-md-7 col-lg-7 col-xl-5 col-xxl-5 flex-center">
+            <h2 class="title h2 mtno">Datos del sector</h2>
+            <p>En la actualidad, los Growht Hackers son uno de los perfiles más demandados del sector y su salario se ubica entre los 30.000 y los 50.000€.
+            </p>
+          </div>
+          <div class="col-8 col-md-3 col-lg-3 col-xl-4 col-xxl-3 text-right flex-center">
+            <p class="h5 mtno">El paro en esta profesión está por debajo de la media.</p>
+            <p class="super-number"><strong>4%</strong></p>
+            <p class="super-number"><strong></strong>Según INE (marzo 2020)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo imagen texto standard con botón secundario, es el módulo dinámico
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="col2-image-text with-head row section">
+      <div class="col-lg-6">
+        <p class="super-title">Todo va a cambiar</p>
+        <h2 class="title h2">Únete a la Revolución Profesional</h2>
+        <div class="d-sm-block d-md-block d-lg-none">
+          <img src="../images/ejemplo-horizontal.jpg" alt="[alt]" title="[alt]" />
+        </div>
+        <p>
+          No saben que estudios realizar, pero ya saben que <strong>#TodoVaACambiar</strong> y que ya no va del rollo, primero estudio y luego trabajo.
+          Buscan aprender un oficio que luego complementan con una formación de carrera... o no. Pero saben que empezar a trabajar es fundamental porque lo necesitan o porque así lo ven en su carrera.
+        </p>
+        <p class="link-primary-container">
+          <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#modal-programa" title="Conoce más sobre nosotros"
+          >Quiero recibir el programa</a
+          >
+        </p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <img src="../images/ejemplo-horizontal.jpg" alt="[alt]" title="[alt]" />
+      </div>
+    </section>
+
+    <!-- Módulo Asignaturas y temas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="asignaturas-y-temas" class="signatures-section section with-head">
+      <div class="signature-block">
+        <div class="row signature-block-head">
+          <div class="col-12">
+            <p class="h3">Bloque <img src="../images/bloque1.svg" alt="Bloque 1" title="Bloque 1"/></p>
+            <p class="margin">Duración  3 semanas</p>
+          </div>
+        </div>
+        <ul class="signatures row">
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="signature-block">
+        <div class="row signature-block-head">
+          <div class="col-12">
+            <p class="h3">Bloque <img src="../images/bloque2.svg" alt="Bloque 2" title="Bloque 2"/></p>
+            <p class="margin">Duración  3 semanas</p>
+          </div>
+        </div>
+        <ul class="signatures row">
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="signature-block">
+        <div class="row signature-block-head">
+          <div class="col-12">
+            <p class="h3">Bloque <img src="../images/bloque3.svg" alt="Bloque 3" title="Bloque 3"/></p>
+            <p class="margin">Duración  3 semanas</p>
+          </div>
+        </div>
+        <ul class="signatures row">
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+          <li class="col-12 col-sm-6 col-xl-4 col-xxxl-3">
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+            <p><a href="#url-asignatura" title="Ver página de [asignatura]">Más sobre Pensamiento digital</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Módulo Alumnii
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="alumni" class="section row">
+      <div class="col-12">
+        <h2 class="mtno">Nuestros alumni</h2>
+        <div class="testimonial-container with-pic text-white" >
+          <div class="swiper-container swiper-alone-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                    <p class="text h4 mtno">“Estos nuevos profesionales son unos de los más buscados”</p>
+                    <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                    <p class="text h4 mtno">“Estos nuevos profesionales son unos de los más buscados, tanto por startups como por empresas en transformación digital”</p>
+                    <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                    <p class="text h4 mtno">“Estos nuevos profesionales”</p>
+                    <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-alone-testimonial"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo Descuento
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="discount" class="grey-bg extended section b-radius row coloured  with-head">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-content-center">
+          <div class="col-lg-7 flex-center order-md-2 order-lg-1">
+            <p class="super-title">Todo va a cambiar</p>
+            <h2 class="title h2 mtno">Obtén un descuento del 10% por pronto pago</h2>
+            <p class="margin">En Edix creemos que la mejor formación es aquella que prepara de verdad al alumno para conectarse al mundo profesional. </p>
+            <p class="d-none d-md-block"><a class="btn" title="matricúlate ahora">Matricúlate ahora</a></p>
+          </div>
+          <div class="col-lg-5 flex-center order-md-1 order-lg-2">
+            <img src="../images/dto.svg" alt="Descuento del 10%" title="Descuento del 10%"/>
+            <p class="d-md-none"><a class="btn" title="matricúlate ahora">Matricúlate ahora</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo Preguntas frecuentes
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="faqs-container" class="faqs with-head section row">
+      <div class="col-lg-6">
+        <h2 class="super-title p">Preguntas frecuentes</h2>
+        <p class="title h2 margin">¿Qué más te gustaría saber?</p>
+      </div>
+      <div class="col-12">
+        <div class="accordion" id="faqs">
+          <div class="faq-container">
+            <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapseOne">
+              Enunciado pregunta #1
+            </h3>
+            <div id="collapse-1" class="collapse faq-body col-lg-8" aria-labelledby="headingOne" data-parent="#faqs">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+          <div class="faq-container">
+            <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">Enunciado pregunta #2</h3>
+            <div id="collapse-2" class="collapse faq-body col-lg-8" aria-labelledby="headingTwo" data-parent="#faqs">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+          <div class="faq-container">
+            <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapseThree">Enunciado pregunta #3</h3>
+            <div id="collapse-3" class="collapse faq-body col-lg-8" aria-labelledby="headingThree" data-parent="#faqs">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <p class="link-primary-container"><a class="link-primary" href="#" title="Ver preguntas frecuentes">Ver preguntas frecuentes</a></p>
+      </div>
+    </section>
+
+    <!-- Módulo imagen texto standard módulo dinámico
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="col2-image-text with-head row section">
+      <div class="col-lg-6">
+        <p class="super-title">Edix es para todos</p>
+        <h2 class="title h2">Módulo dinámico</h2>
+        <div class="d-sm-block d-md-block d-lg-none">
+          <img src="../images/ejemplo-horizontal.jpg" alt="[alt]" title="[alt]" />
+        </div>
+        <p>
+          No saben que estudios realizar, pero ya saben que <strong>#TodoVaACambiar</strong> y que ya no va del rollo, primero estudio y luego trabajo.
+          Buscan aprender un oficio que luego complementan con una formación de carrera... o no. Pero saben que empezar a trabajar es fundamental porque lo necesitan o porque así lo ven en su carrera.
+        </p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <img src="../images/ejemplo-horizontal.jpg" alt="[alt]" title="[alt]" />
+      </div>
+    </section>
+  </main>
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <footer id="footer">
+        <div class="container">
+          <section class="upper-footer">
+            <div class="row">
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">
+                  Sobre Edix
+                </p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Más información</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Nuestras Carreras</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Nuestras Carreras</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="downer-footer">
+            <div class="d-flex justify-content-between flex-column flex-md-row  up-line">
+              <div>
+                <label>Selecciona región
+                  <select class="form-control">
+                    <option>España</option>
+                    <option>Otro país</option>
+                  </select>
+                </label>
+              </div>
+              <ul class="social inline">
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Instagram"
+                    ><img
+                      src="../images/instagram.svg"
+                      alt="logo de Instagram"
+                      title="logo de Instagram"
+                    /></span>
+                  </li>
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Twitter"
+                    ><img src="../images/twitter.svg" alt="logo de Twitter" title="logo de Twitter"
+                    /></span>
+                  </li>
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Linkedin"
+                    ><img
+                      src="../images/linkedin.svg"
+                      alt="logo de Linkedin"
+                      title="logo de Linkedin"
+                    /></span>
+                  </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+              <p class="legal">
+                Copyright © 2019 Edix
+                <a href="#" title="Privacidad, cookies, condiciones legales y condiciones de contratación">Privacidad, cookies y condiciones legales</a              >
+              </p>
+              <img class="logo-footer" src="../images/logo_unir_b.svg" alt="Logo Unir" />
+            </div>
+          </section>
+        </div>
+      </footer>
+<!-- modal te enviamos programa-->
+  <div
+    id="modal-programa"
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content form-inside">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar" />
+        </button>
+        <div class="content">
+          <div class="head">
+            <p class="name h4 mtno">
+              Te enviamos el programa
+            </p>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6"><input class="form-control" name="Nombre" placeholder="nombre"/></div>
+                <div class="form-group col-md-6"><input class="form-control" name="Apellido" placeholder="apellido"/></div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="Email" placeholder="email"/>
+              </div>
+              <hr/>
+              <div class="form-row">
+                <div class="col-12">
+                  <div class="legal-text d-block grey-border">
+                    EDIX EDUCACIÓN S.A. (en adelante, Edix), tratará los datos de carácter personal que nos has proporcionado con la finalidad de atender a tu solicitud de contratación de productos y/o servicios ofrecidos por Edix, así como para facilitarte el acceso al material formativo y la asistencia necesarios para cursar su carrera profesional, incluido por vía telefónica, así como para mantenerte informado de nuestra actividad. Podrás revocar el consentimiento otorgado, así como ejercitar los derechos reconocidos en los artículos 15 a 22 del Reglamento (UE) 2016/679, mediante solicitud dirigida a C/ Zurbano 73, 28010, Madrid, España, o a la siguiente dirección de correo electrónico: rgpd@edix.com, adjuntando copia de su DNI o documentación acreditativa de su identidad. Si lo deseas puede consultar información adicional y detallada sobre Protección de Datos pinchando <a href="/es/legal/#PoliticaDePrivacidad" title="Ver Política de privacidad">aquí</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="custom-control-label" for="legal-check-datos">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input check-button__input"
+                      id="legal-check-datos"
+                    />
+                    <span class="check-button__control"></span>
+                    <span class="check-button__label"
+                    >He leido y acepto las condiciones de
+                              <a href="#" title="Ver las condiciones legales"
+                              >Protección de datos</a
+                              ></span
+                    >
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control-label" for="legal-check">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input check-button__input"
+                      id="legal-check"
+                    />
+                    <span class="check-button__control"></span>
+                    <span class="check-button__label"
+                    >He leido y acepto las condiciones legales
+                              <a href="#" title="Ver las condiciones legales"
+                              >Términos legales</a
+                              ></span
+                    >
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn" value="Quiero recibir el programa"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal container-->
+<div id="modal-profe" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar"/>
+        </button>
+        <picture class="image-container">
+            <!-- tatamiento vertical -->
+            <source media="(max-width: 768px)" srcset="">
+            <!-- tatamiento version_horizontal -->
+            <img class="image" alt="" title="" src="">
+            <noscript>
+              <img class="image" alt="" title="" src="">
+            </noscript>
+        </picture>
+        <div class="content">
+          <div class="head">
+            <p class="job"></p>
+            <p class="name h4 mtno"></p>
+          </div>
+          <div class="text scroll-bar-visible"></div>
+          <a class="linkedin" href="" title="linkedin" target="_blank"><img src="../images/linkedin-icon.svg" alt="linkedin" title="linkedin"/></a>
+        </div>
+      </div>
+  </div>
+</div>
+<style>
+  .widget-launcher {
+    right: 16px;
+    bottom: 16px;
+    position: fixed;
+    box-shadow: 0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2);
+    transition: box-shadow .1s ease-in-out;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgb(106, 0, 194);
+    z-index: 100000000;
+  }
+  .widget-launcher .widget-launcher-icon.open {
+    width: 32px;
+    height: 32px;
+  }
+  .widget-launcher .widget-launcher-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .private-image {
+    vertical-align: middle;
+  }
+
+</style>
+<button class="Launcher__LauncherButton-n1up1l-0 iUqRLO widget-launcher reagan--widget-loaded " tabindex="0" role="button" type="button" aria-label="Abrir chat en vivo" aria-haspopup="true" style="background-color: rgb(106, 0, 194);"><span class="fade-transition-container"><img alt="Abrir chat en vivo" class="private-image widget-launcher-icon open img-responsive private-image--responsive" src="//static.hsappstatic.net/conversations-visitor-experience-components/static-1.2369/img/visitor-widget/launcher-open-icon.svg"></span></button>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../js/swiper.min.js?v12"></script>
+    <script src="../js/jquery.touchSwipe.min.js?v12"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?v12"></script>
+</body>
+
+</html>

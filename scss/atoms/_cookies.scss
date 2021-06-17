@@ -1,0 +1,29 @@
+body #onetrust-consent-sdk {
+  #onetrust-banner-sdk {
+    background-color: rgba(106, 0, 194, 0.8);
+    #onetrust-policy-text {
+      color: #fff;
+    }
+    a[href] {
+      color: #fff;
+      &:hover {
+        color: $c-moradoclaro;
+      }
+    }
+  }
+}
+body #onetrust-pc-sdk {
+  .ot-cat-grp .ot-always-active {
+    color: $c-morado;
+  }
+  .ot-cat-item > button:focus,
+  .ot-acc-cntr > button:focus,
+  li > button:focus {
+    outline: $c-morado solid 2px;
+  }
+}
+@include respond-above(md) {
+  #onetrust-consent-sdk #onetrust-banner-sdk #onetrust-button-group-parent {
+    text-align: right;
+  }
+}

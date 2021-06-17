@@ -1,0 +1,20 @@
+.img-container {
+  margin-bottom: 16px;
+  img {
+    display: block;
+  }
+  &.rounded {
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+}
+
+@include respond-above(lg) {
+  .img-container {
+    margin-bottom: 0;
+    &.rounded {
+      border-radius: $border-radius-lg;
+      overflow: hidden;
+    }
+  }
+}

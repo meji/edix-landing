@@ -1,0 +1,69 @@
+.opinion {
+  background: $c-azulform;
+  padding: 32px;
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: $border-radius-sm;
+  height: calc(100% - 24px);
+  flex-direction: column;
+  strong {
+    display: block;
+  }
+  p:last-child {
+    margin: 0;
+  }
+  .rrss {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    .svg-hover {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      path {
+        fill: $c-azuloscuro;
+      }
+    }
+  }
+  .shoot-link-blank {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    svg path {
+      fill: $c-azuloscuro;
+      stroke: $c-azuloscuro;
+    }
+    &:hover svg path {
+      fill: $c-morado;
+      stroke: $c-morado;
+    }
+  }
+  &.autolinkable:hover {
+    background: $c-azuloscuroclaro;
+    color: #fff;
+    cursor: pointer;
+    * {
+      color: #fff;
+    }
+    .svg-hover {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+@include respond-above(md) {
+  .opinion {
+    flex-direction: row;
+    .rrss {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+footer#footer.landing-footer {
+  margin-top: 72px;
+  #site-black-footer p {
+    text-align: center;
+    max-width: none;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+p.form-subtitle {
+  margin-top: 8px;
+}
+h4.form-title {
+  margin-top: 32px;
+}
+form {
+  &.box-shadow {
+    padding: 32px;
+    box-shadow: $box-shadow;
+  }
+  label {
+    font-size: 81.25%;
+    &.form-check-label {
+      cursor: pointer;
+    }
+  }
+  .form-check label {
+    font-size: 70%;
+  }
+  .form-control,
+  input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
+    background: $c-azulform;
+    border: 2px solid $c-azulform;
+    font-size: 81.25%;
+    line-height: 1.8;
+    padding: 12px;
+    height: 42px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    &:focus {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid $c-azulform;
+    }
+    &:not(:placeholder-shown):not(select) {
+      background: #fff;
+      font-weight: bold;
+    }
+  }
+  select.form-control {
+    background: url(img/select-icon.svg) no-repeat;
+    background-position: center right 12px;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    padding: 6px 12px;
+  }
+  //Radio
+  .radio-button__control {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-color: $c-azulform;
+    border: 2px solid $c-azulform;
+    border-radius: 100%;
+  }
+  .radio-button__input {
+    opacity: 0;
+    position: absolute;
+    &:checked + .radio-button__control {
+      background: #fff;
+    }
+    &:checked + .radio-button__control:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 16px;
+      height: 16px;
+      background-color: $c-morado;
+      border-radius: 100%;
+    }
+  }
+  .radio-button__label,
+  .check-button__label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  //Check
+  //Radio
+  .form-check {
+    padding-left: 0;
+  }
+  .check-button__label {
+    width: calc(100% - 35px);
+  }
+  .check-button__control {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    background-color: $c-azulform;
+    border: 2px solid $c-azulform;
+    border-radius: 4px;
+  }
+  .check-button__input {
+    opacity: 0;
+    position: absolute;
+    &:checked + .check-button__control {
+      background: #fff;
+    }
+    &:checked + .check-button__control:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      background: url('img/check.svg') no-repeat center center;
+      background-size: 100%;
+    }
+  }
+  p.notice {
+    width: 100%;
+    padding: 16px 64px;
+    text-align: center;
+    font-size: 87.5%;
+    border-radius: 4px;
+    &.blue {
+      background: $c-azulclaro;
+    }
+    &.red {
+      background: $c-rojoform url(img/error-icon.svg) no-repeat 22px center;
+      color: #fff;
+      text-align: left;
+      padding-left: 78px;
+      margin-top: 36px;
+    }
+  }
+  p.submit {
+    margin: 24px 0 0;
+  }
+  small.error {
+    color: $c-rojoform;
+    font-size: 64.3%;
+  }
+  input.form-control.error,
+  input.error.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
+    border-color: $c-rojoform;
+    color: $c-rojoform;
+    &::placeholder {
+      color: $c-rojoform;
+    }
+  }
+  .legal-text {
+    font-size: 0.61rem;
+    height: 50px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    display: none;
+    margin-bottom: 16px;
+    &.grey-border {
+      border: 1px solid #eee;
+    }
+  }
+  hr {
+    margin: 8px auto 16px;
+  }
+  &.reduced-form {
+    .form-group {
+      margin-bottom: 0.7rem;
+    }
+    .h5,
+    .h6 {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    p.submit {
+      margin-top: 16px;
+    }
+  }
+}
+
+.blue-bg form {
+  .check-button__control {
+    border-color: $c-azuloscuroclaro;
+    background-color: $c-azuloscuro;
+    margin-bottom: 0;
+  }
+}
+@include respond-above(xl) {
+  form {
+    .form-control,
+    input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
+      border-radius: 6px;
+    }
+    p.notice {
+      border-radius: 8px;
+    }
+    .form-control:focus::placeholder,
+    input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']):focus::placeholder {
+      font-size: 64.25%;
+      line-height: 1;
+      position: relative;
+      top: -10px;
+    }
+  }
+}
+
+form.border-radius.box-shadow {
+  .btn {
+    width: 100%;
+  }
+}
+
+.blue-form-bg form {
+  .btn-secondary {
+    background: transparent;
+    width: 100%;
+  }
+  .form-control,
+  input.hs-input:not([type='submit']) {
+    background: #fff;
+    border: 0 none;
+  }
+  .check-button__control {
+    background: transparent;
+    border-color: $c-morado;
+  }
+}

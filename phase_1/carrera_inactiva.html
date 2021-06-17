@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Carrera Inactiva</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="scss/utils/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/style.css?v12">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link id="favicon" rel="shortcut icon" href="../images/favicon.png" type="image/png">
+
+</head>
+<body class="carrera">
+<div id="wrapper">
+  <!-- HEADER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header id="site-header" class="white closed not-fixed origin-white no-shadow">
+    <div class="container">
+      <a id="logo" href="/" title="Ir a la home">
+        <img src="../images/logo_edix.svg" alt="logo Edix" title="Edix, Formación"/>
+      </a>
+      <nav>
+        <ul>
+          <li class="active"><a title="Qué es Edix" href="">Sobre Edix</a></li>
+          <li><a title="Cursos, carreras y formación" href="">Nuestras Carreras</a></li>
+          <li><a title="Empresas y empleos" href="">Club de empresas</a></li>
+          <li><a title=" Alumnos y profesores Edix" href="">Comunidad</a></li>
+          <li><a title="Blog Edix" href="">Blog</a></li>
+        </ul>
+      </nav>
+      <nav class="buttons">
+        <ul>
+          <li><a title="Acceder" class="btn" href="" class="btn"><img src="../images/user-icon.svg" alt="Acceder" title="Acceder"/><span>Acceder</span></a></li>
+          <li><a title="Te llamamos" class="btn small" href=""><img src="../images/phone-icon.svg" alt="Te llamamos" title="Te llamamos"/><span>Te llamamos</span></a></li>
+        </ul>
+      </nav>
+
+      <div id="nav-icon">
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO HOME
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="hero-career" class="hero hero-big text-white inactive">
+    <picture class="hero-bg">
+      <!-- tatamiento vertical -->
+      <source media="(orientation:portrait)" srcset="../images/ejemplo-vertical.jpg">
+      <!-- tatamiento version_horizontal -->
+      <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+      <noscript>
+        <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+      </noscript>
+    </picture>
+    <div class="data-container d-flex">
+      <div class="container justify-content-center align-self-center">
+        <div class="data-container-mobile d-flex">
+          <div class="content-center justify-content-center align-self-center">
+            <div class="row">
+              <div class=" col-11 col-xl-8">
+                <span class="career-icon"> <img alt="Icono de Experto en Growth marketing" title="Icono de Experto en Growth marketing" src="../images/career-icons/icon-name-hero-inactive.svg"/></span>
+                <h1 class="mtno h2"><small>Experto en</small>Growth marketing</h1>
+              </div>
+            </div>
+            <div class="row">
+              <p class="col-11 col-xl-9 col-xxl-8">En nuestro curso EDIX de <strong>Experto en Growth Marketing</strong>, aprenderás de manera práctica todas las disciplinas necesarias para incrementar tráfico, captar leads (contactos) y aumentar ventas ajustándote a tu presupuesto.</p>
+              <p class="unir col-5 col-xl-12"><img src="../images/logo_unir_b.svg" alt="logo Unir" title="logo Unir"/></p>
+            </div>
+          </div>
+        </div>
+        <div class="row counter-numbers">
+          <div class="col-lg-2 hero-data">
+            <div class="row">
+              <div class="col-5 col-lg-12">
+                <p class="definition">Duración</p>
+                <p><strong>10 meses</strong></p>
+              </div>
+              <p class="secondary col-7 col-lg-12">Del 1 de enero al 23 de octubre</p>
+            </div>
+          </div>
+          <div class="col-lg-2 hero-data">
+            <div class="row">
+              <div class="col-5 col-lg-12">
+                <p class="definition">Dedicación</p>
+                <p><strong>6 horas</strong></p>
+              </div>
+              <p class="secondary col-7 col-lg-12">a la semana</p>
+            </div>
+          </div>
+          <div class="col-lg-2 hero-data">
+            <div class="row">
+              <div class="col-5 col-lg-12">
+                <p class="definition">Prácticas</p>
+                <p><strong>6 meses</strong></p>
+              </div>
+              <p class="secondary col-7 col-lg-12">¡Remuneración por, al menos, el coste del curso!</p>
+            </div>
+          </div>
+          <div class="col-lg-2 hero-data">
+            <div class="row">
+              <div class="col-5 col-lg-12">
+                <p class="definition">Precio</p>
+                <p><strong>2.000 €</strong></p>
+              </div>
+              <p class="secondary col-7 col-lg-12"><a href="#" title="ver formas de pago">Ver formas de pagos</a></p>
+            </div>
+          </div>
+          <div class="col-lg-2 hero-data">
+              <div class="row">
+                <div class="col-4 col-lg-12">
+                  <p class="definition">Formación online</p>
+                  <p><strong>100%</strong></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="career-nav">
+      <nav class="container">
+        <a id="help_btn" class="btn white" href="#" title="Te ayudamos a elegir">Avísame</a>
+        <ul class="list-inline">
+          <li><span  class="smooth-scroll" id="informacion_link" data-href="#carrera1" title="Información de la carrera">Información de la carrera</span></li>
+          <li><span class="smooth-scroll" data-href="#carrera9" title="Equipo educativo">Equipo educativo</span></li>
+          <li><span class="smooth-scroll" data-href="#carrera11" title="Salidas profesionales">Salidas profesionales</span></li>
+          <li><span class="smooth-scroll" data-href="#carrera14" title="Dudas">Dudas</span></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CONTENIDO
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main id="main" class="container">
+
+  <!-- Módulo 1 Módulo texto bold derecha
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera1" class="col2-text with-head row section">
+      <h2 class="super-title p col-12">¿Qué es Growth marketing?</h2>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="title h2">Un oficio de futuro.</h3>
+            <p>Gracias a nuestro método EDIX, basado en un aprendizaje útil y funcional complementado con prácticas en empresas remuneradas garantizadas, estarás preparado para trabajar en el presente con un salario digno. Y por supuesto, también lo estarás para afrontar los desafíos del futuro.</p>
+          </div>
+          <div class="col-lg-6">
+              <p class="text-bold h4 mtno">Con nuestra titulación de Experto en Growth Marketing obtendrás en 10 meses  la base teórica y las habilidades prácticas para trabajar en este oficio digital.</p>
+          </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- Módulo 2 Módulos foto título blanco hover y texto
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera2" class="image-text-modules row section">
+      <div class="col-md-6 image-text-column-module">
+        <figure>
+          <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+          <figcaption><h2 class="p">¿Qué es el Growth Marketing?</h2></figcaption>
+        </figure>
+        <p class="h4">Título para módulo de máximos</p>
+        <p>El Growth Marketing es una compilación de disciplinas avanzadas del marketing digital que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital <strong>especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean</strong>. Y es que, dicho de otra manera, se trata de una nueva posición del marketing que identifica maneras de crecimiento utilizando los mínimos medios posibles.</p>
+      </div>
+      <div class="col-md-6 image-text-column-module">
+        <figure>
+          <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+          <figcaption><h2 class="p">¿Qué es el Growth Marketing?</h2></figcaption>
+        </figure>
+        <p>El Growth Marketing es una compilación de disciplinas avanzadas del marketing digital que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital <strong>especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean</strong>. Y es que, dicho de otra manera, se trata de una nueva posición del marketing que identifica maneras de crecimiento utilizando los mínimos medios posibles.</p>
+      </div>
+      <div class="col-md-6 image-text-column-module">
+        <figure>
+          <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+          <figcaption><h2 class="p">¿Qué es el Growth Marketing?</h2></figcaption>
+        </figure>
+        <p>El Growth Marketing es una compilación de disciplinas avanzadas del marketing digital que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital <strong>especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean</strong>. Y es que, dicho de otra manera, se trata de una nueva posición del marketing que identifica maneras de crecimiento utilizando los mínimos medios posibles.</p>
+      </div>
+      <div class="col-md-6 image-text-column-module">
+        <figure>
+          <img alt="alt de la imagen" title="title de la imagen" src="../images/ejemplo-horizontal.jpg">
+          <figcaption><h2 class="p">¿Qué es el Growth Marketing?</h2></figcaption>
+        </figure>
+        <p>El Growth Marketing es una compilación de disciplinas avanzadas del marketing digital que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital <strong>especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean</strong>. Y es que, dicho de otra manera, se trata de una nueva posición del marketing que identifica maneras de crecimiento utilizando los mínimos medios posibles.</p>
+      </div>
+    </section>
+
+  <!-- Módulo 3 Testimonial
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera3" class="section row">
+      <div class="col-12">
+        <div class="testimonial-container text-white" >
+          <div class="swiper-container swiper-alone-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <p class="text h4 mtno">“En 2021 la economía digital representará el 50% del P.I.B mundial”</p>
+                  <p class="author"><strong>Ben Towers.</strong> Zest Agency Limited.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="testimonial-slide">
+                  <p class="text h4 mtno">“En 2021 la economía digital representará el 50% del P.I.B mundial”</p>
+                  <p class="author"><strong>Ben Towers.</strong> Zest Agency Limited.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="testimonial-slide">
+                  <p class="text h4 mtno">“En 2021 la economía digital representará el 50% del P.I.B mundial”</p>
+                  <p class="author"><strong>Ben Towers.</strong> Zest Agency Limited.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-alone-testimonial"></div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Módulo 4 Modulo texto foto der pegada
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera4" class="col2-image-text with-head row section">
+      <div class="col-lg-6">
+        <h2 class="p super-title">Así se estudia en Edix</h2>
+        <h3 class="title h2">Métodos prácticos</h3>
+        <div class="d-sm-block d-md-block d-lg-none  ">
+          <img src="../images/geometric-home.svg" alt="decoración" title="decoración"/>
+        </div>
+        <p>Formamos a profesionales que puedan liderar el cambio en todos los sectores empresariales. Te ponemos en contacto con visionarios y emprendedores protagonistas de cambios y avances globales. Te abrimos los ojos a nuevas perspectivas. Te impulsamos a pensar creativamente y a desarrollar tu talento al máximo. En Edix queremos que dispongas de los mejores recursos en tu futuro laboral.</p>
+        <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce más sobre nosotros">Conoce más sobre nosotros</a></p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block  ">
+          <img src="../images/geometric-home.svg" alt="decoración" title="decoración"/>
+      </div>
+    </section>
+
+  <!-- Módulo 5 Prácticas remuneradas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera5" class="extended purple-bg geometric-pattern-bg text-white coloured with-head section b-radius">
+      <div class="container">
+        <div class="col-12 col-lg-6 col-xl-7">
+          <p class="super-title">Practicas en las empresas más relevantes</p>
+          <h3 class="title h2 nm">Prácticas remuneradas aseguradas.</h3>
+          <p>Contamos con un modelo totalmente adaptado a los perfiles y al talento que buscan las empresas hoy en día.</p>
+          <ul class="logos list-inline">
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+            <li><img src="../images/logo-empresa.svg" alt="Nombre de empresa" title="Nombre de empresa" /></li>
+          </ul>
+          <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce nuestro club de empresas">Conoce nuestro club de empresas</a></p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Módulo 6 Asignaturas y temas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera6" class="signatures-section with-head section">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <p class="super-title">Así se estudia en Edix</p>
+          <h2 class="title h2">Asignaturas y temas</h2>
+          <p><strong>* 500 horas de contenido</strong> teórico dividido en asignaturas con una duración media de 31 h.</p>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="col-12 signatures">
+          <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+           <li>
+            <h3 class="h5 mtno">Pensamiento digital</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  <!-- Módulo  7 Saber más
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera7" class="extended form-inside text-white with-head section triangles-right-bg blue-bg coloured b-radius">
+      <div class="container">
+        <div class="row  justify-content-xl-start">
+          <div class="col-12 col-lg-12 col-xl-11">
+            <p class="super-title">Quiero ser Experto en Growth Marketing</p>
+          </div>
+        </div>
+        <div class="row justify-content-xl-start">
+          <div class="col-12 col-lg-6 col-xl-6">
+            <p class="title h2 nm">¿Quieres saber más?</p>
+            <p>Te enviaremos un PDF con toda la información de la carrera que te interesa.</p>
+          </div>
+          <div class="col-12 col-lg-5-6 col-xl-5">
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="email" name="EMAIL" placeholder="Escribe tu email" required="">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-xl-7">
+                  <div class="form-check">
+                    <label class="custom-control-label" for="legal">
+                      <input type="checkbox" class="custom-control-input check-button__input" id="legal">
+                      <span class="check-button__control"></span>
+                      <span class="check-button__label">He leído y acepto las <a href="#" title="Ver las condiciones legales">condiciones legales</a></span>
+                    </label>
+                  </div>
+                </div>
+                <p class="col-xl-5 text-right"><input class="btn btn-secondary" type="submit" value="Solicitar"/></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Módulo  8 Formas de Pago
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera8" class="offer with-head section">
+      <div class="row">
+        <h2 class="super-title p col-12">Formas de pago</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h3 class="title h2">Te lo ponemos bien fácil</h3>
+          <img class="d-sm-block d-md-block d-lg-none" src="../images/payments.svg" alt="Formas de pago" title="Formas de pago"/>
+          <p class="head-margin">Ponemos a tu alcance todas las facilidades para acceder a una formación de calidad. Diferentes formas de pago para que tú elijas y con todos los métodos para ofrecerte seguridad en el proceso.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block text-center">
+          <img src="../images/payments.svg" alt="Formas de pago" title="Formas de pago"/>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-xl-6 text-white">
+        <div class="purple-light-bg b-radius pd64">
+          <span class="label">-10% de descuento</span>
+          <h3 class="h4 mtno">Pago único</h3>
+          <p class="number">1800 €</p>
+          <p class="text">El precio sin descuento es de 2000€</p>
+        </div>
+      </div>
+      <div class="col-xl-6 text-white">
+        <div class="purple-bg b-radius pd64">
+          <h3 class="h4 mtno">Pago aplazado</h3>
+          <p class="number">200 €*</p>
+          <p class="text">*Si aplazas con un máximo de 10 cuotas. Precio sin interéses. Ver condiciones de finaciación</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Módulo 9 Los mejores docentes
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera9" class="signatures-section with-head section">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2 class="super-title p">Equipo educativo</h2>
+          <h3 class="title h2">Los mejores docentes.</h3>
+          <p class="head-margin">Todos nuestros profesores y equipo docente son profesionales del sector y cuentan con muchos años de experiencia en formación.</p>
+        </div>
+      </div>
+      <div class="swiper-container-ext">
+        <div class="swiper-container swiper4321">
+          <div class="swiper-wrapper">
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+            <div class="profe-item swiper-slide" data-target="#modal-profe" data-toggle="modal"  data-src_mobile="images/profe-mobile-popup.jpg" data-job="Directora · Profesora · Autora" data-name="Silvia Mayo" data-linkedin="https://www.linkedin.com/in/jmmejias/" data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>">
+              <figure>
+                <img src="../images/profe.jpg" alt="Silvia Mayo" title="Silvia Mayo">
+                <figcaption>
+                  <p>Directora · Profesora · Autora</p>
+                  <h4 class="name h4 mno">Silvia Mayo</h4>
+                </figcaption>
+                </figure>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Módulo 10 Testimonial con foto
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera10" class="section row">
+      <div class="col-12">
+        <div class="testimonial-container with-pic text-white" >
+          <div class="swiper-container swiper-alone-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                      <p class="text h4 mtno">“Estos nuevos profesionales son unos de los más buscados, tanto por startups como por empresas en transformación digital”</p>
+                      <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                      <p class="text h4 mtno">“Estos nuevos profesionales son unos de los más buscados, tanto por startups como por empresas en transformación digital”</p>
+                      <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide d-flex">
+                  <img alt="Nombre de la persona" title="nombre de la persona" src="../images/testimonial.jpg"/>
+                  <div class="justify-content-center align-self-center">
+                      <p class="text h4 mtno">“Estos nuevos profesionales son unos de los más buscados, tanto por startups como por empresas en transformación digital”</p>
+                      <p class="author">Caption. <strong>Nombre y apellidos.</strong> Otros datos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-alone-testimonial"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Módulo 11 Módulo texto bold derecha
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera11" class="col2-text with-head row section">
+      <h2 class="super-title col-12 p">Salida profesional</h2>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="title h2">Dedícate a lo que te gusta</h3>
+            <p>Además de tener las habilidades comentadas en los epígrafes anteriores, como la capacidad analítica, la creatividad y la curiosidad, para formar parte del curso de Growth Marketing se valora positivamente tener conocimientos de publicidad, ADE, Marketing y/o el ecosistema digital. Sin embargo, esto no es imprescindible, ya que nuestras carreras arrancan desde desde cero.</p>
+          <p>Si quieres, puedes.</p>
+          </div>
+          <div class="col-lg-6">
+              <h3 class="text-bold h4 mtno">El Growth Hacker forma parte de las divisiones de Marketing y/o Publicidad, aunque en las empresas más reducidas  encaja en el departamento de Comunicación..</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Módulo 12 Módulo trapecios
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera12" class="trapecios-bg extended text-white with-head section blue-light-bg b-radius row coloured">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-5 col-lg-4 col-xxxl-3">
+              <h2 class="title h2">¿Quieres saber más?</h2>
+              <p>En la actualidad, los Growht Hackers son uno de los perfiles más demandados del sector y su salario se ubica entre los 30.000 y los 50.000€.</p>
+          </div>
+          <div class="col-md-6 text-blue text-right">
+              <p class="title h2">Salario medio en España</p>
+              <p class="super-number"><strong>48.731€</strong>Bruto/año</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Módulo 13 Módulo slider posts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera13" class="slider-posts with-head section row">
+      <div class="col-lg-6">
+        <h2 class="super-title p">Profesionales que ejercen</h2>
+        <h3 class="title h2">Conoce expertos en Growth marketing</h3>
+      </div>
+      <div class="col-12 slider">
+        <div class="swiper-container-ext alone">
+          <div class="swiper-container swiper-alone">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide item">
+                <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                <h4 class="h4 mno">El caso de éxito de Juan Mora</h4>
+                <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+              </div>
+               <div class="swiper-slide item">
+                <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                <p class="h4 mno">El caso de éxito de Juan Mora</p>
+                <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+              </div>
+               <div class="swiper-slide item">
+                <div class="img-container"><img src="../images/slider-item-img-ver.jpg" alt="EL caso de éxito de Juan Mora" title="EL caso de éxito de Juan Mora"/></div>
+                <p class="h4 mno">El caso de éxito de Juan Mora</p>
+                <p class="cormorant h4">“Bienvenido a la carrera de mayor proyección en 2019. La que te convierte en el worker que las empresas necesitan.”</p>
+                <p>El Growth Marketing es una disciplina que busca incrementar de forma rápida y notoria el volumen de usuarios, ingresos o impactos de una empresa, con el mínimo gasto y esfuerzo posible. Se trata de un experto digital especialmente demandado por startups, pymes y en general empresas de nueva creación en las que los recursos escasean. </p>
+                <p class="link-primary-container"><a class="link-primary" href="#" title="Conoce el caso completo">Conoce el caso completo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Módulo 14 Módulo Preguntas frecuentes
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera14" class="faqs with-head section row">
+      <div class="col-lg-6">
+        <h2 class="super-title p">Preguntas frecuentes</h2>
+        <p class="title h2">¿Qué más te gustaría saber?</p>
+      </div>
+      <div class="col-12">
+        <div class="accordion" id="faqs">
+          <div class="faq-container">
+            <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapseOne">
+                Enunciado pregunta #1
+            </h3>
+            <div id="collapse-1" class="collapse faq-body col-lg-8" aria-labelledby="headingOne" data-parent="#faqs">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+          <div class="faq-container">
+            <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapseTwo">Enunciado pregunta #2</h3>
+            <div id="collapse-2" class="collapse faq-body col-lg-8" aria-labelledby="headingTwo" data-parent="#faqs">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+          <div class="faq-container">
+             <h3 class="p faq-title collapsed" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapseThree">Enunciado pregunta #3</h3>
+            <div id="collapse-3" class="collapse faq-body col-lg-8" aria-labelledby="headingThree" data-parent="#faqs">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <p class="link-primary-container"><a class="link-primary" href="#" title="Ver preguntas frecuentes">Ver preguntas frecuentes</a></p>
+      </div>
+    </section>
+  <!-- Módulo 15 Módulo morad c luz
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="carrera15" class="lamp-module extended text-white section purple-bg b-radius row coloured">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+              <h2 class="title h2 mno">Si aún no sabes que camino es el correcto para alcanzar una meta que te hayas planteado, no te preocupes, nosotros te ayudamos.</h2>
+              <p class="link-primary-container"><a class="btn btn-white" href="#" title="Te ayudamos a elegir">Te ayudamos a elegir</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <footer id="footer">
+        <div class="container">
+          <section class="upper-footer">
+            <div class="row">
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">
+                  Sobre Edix
+                </p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Más información</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Nuestras Carreras</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <p class="footer-title">Nuestras Carreras</p>
+                <ul>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                  <li><a href="#" title="">Link para el footer</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="downer-footer">
+            <div class="d-flex justify-content-between flex-column flex-md-row  up-line">
+              <div>
+                <label>Selecciona región
+                  <select class="form-control">
+                    <option>España</option>
+                    <option>Otro país</option>
+                  </select>
+                </label>
+              </div>
+              <ul class="social inline">
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Instagram"
+                    ><img
+                      src="../images/instagram.svg"
+                      alt="logo de Instagram"
+                      title="logo de Instagram"
+                    /></span>
+                  </li>
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Twitter"
+                    ><img src="../images/twitter.svg" alt="logo de Twitter" title="logo de Twitter"
+                    /></span>
+                  </li>
+                  <li>
+                    <span class="shoot-link-blank" data-href="#" title="Ir a Linkedin"
+                    ><img
+                      src="../images/linkedin.svg"
+                      alt="logo de Linkedin"
+                      title="logo de Linkedin"
+                    /></span>
+                  </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+              <p class="legal">
+                Copyright © 2019 Edix
+                <a href="#" title="Privacidad, cookies, condiciones legales y condiciones de contratación">Privacidad, cookies y condiciones legales</a              >
+              </p>
+              <img class="logo-footer" src="../images/logo_unir_b.svg" alt="Logo Unir" />
+            </div>
+          </section>
+        </div>
+      </footer>
+</div>
+<!-- modal container-->
+<div id="modal-profe" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar"/>
+        </button>
+        <picture class="image-container">
+            <!-- tatamiento vertical -->
+            <source media="(max-width: 768px)" srcset="">
+            <!-- tatamiento version_horizontal -->
+            <img class="image" alt="" title="" src="">
+            <noscript>
+              <img class="image" alt="" title="" src="">
+            </noscript>
+        </picture>
+        <div class="content">
+          <div class="head">
+            <p class="job"></p>
+            <p class="name h4 mtno"></p>
+          </div>
+          <div class="text scroll-bar-visible"></div>
+          <a class="linkedin" href="" title="linkedin" target="_blank"><img src="../images/linkedin-icon.svg" alt="linkedin" title="linkedin"/></a>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../js/swiper.min.js?v12"></script>
+    <script src="../js/jquery.touchSwipe.min.js?v12"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?v12"></script>
+</body>
+
+</html>

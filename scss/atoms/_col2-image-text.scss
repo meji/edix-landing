@@ -1,0 +1,15 @@
+.col2-image-text {
+  img {
+    display: block;
+    margin: 0 -16px 16px;
+    max-width: calc(100% + 32px);
+  }
+}
+@include respond-above(lg) {
+  .col2-image-text {
+    img {
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}

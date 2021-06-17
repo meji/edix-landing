@@ -1,0 +1,72 @@
+#controller-scroll {
+  .col-lg-6 {
+    order: 2;
+    &.form-landing-container {
+      order: 1;
+    }
+  }
+}
+.form-landing-container {
+  background: rgba(0, 0, 0, 0.05);
+  margin: -56px -3px 64px -3px;
+  width: calc(100% + 6px);
+  padding-bottom: 40px;
+  #hero-form {
+    padding: 16px;
+    margin: 0;
+  }
+}
+
+#hero-form {
+  background: #fff;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  padding: 32px;
+  margin-bottom: 64px;
+}
+
+@include respond-above(md) {
+  .form-landing-container {
+    background: transparent;
+    margin: 0;
+    width: auto;
+  }
+}
+
+@include respond-above(lg) {
+  #controller-scroll {
+    .col-lg-6 {
+      order: 1;
+      &.form-landing-container {
+        order: 2;
+      }
+    }
+    #hero-form {
+      margin-bottom: 0;
+    }
+  }
+  .form-landing-container {
+    background: transparent;
+    margin: 0;
+    width: auto;
+    #hero-form {
+      z-index: 10;
+      position: fixed;
+      max-width: 500px;
+    }
+  }
+  #hero-form {
+    p.submit {
+      margin-bottom: 0;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+  #controller-scroll {
+    margin-bottom: 144px;
+  }
+}

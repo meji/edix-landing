@@ -1,0 +1,8 @@
+////////// LAMP MODULE
+.lamp-module{
+  .h2{line-height: 1.2;}
+}
+
+@include respond-above(lg){
+  .lamp-module{background-image: url(img/lamp.svg); background-position: right 72px  top; background-size: contain; background-repeat: no-repeat;}
+}

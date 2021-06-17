@@ -1,0 +1,108 @@
+////////////VIDEO PLAYER
+.video-container {
+  min-height: 184px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  .video-button {
+    min-height: 184px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) url(img/video-player.svg) no-repeat center center;
+    background-size: 48px;
+    cursor: pointer;
+    z-index: 10;
+    transition: $transition;
+    &:hover {
+      background-color: transparent;
+      z-index: 30;
+      cursor: pointer;
+    }
+  }
+}
+
+@include respond-above(md) {
+  .video-container {
+    min-height: 400px;
+    .video-button {
+      min-height: 400px;
+    }
+  }
+}
+@include respond-above(xl) {
+  .video-container {
+    min-height: 672px;
+    .h2 {
+      position: relative;
+      z-index: 20;
+    }
+    .video-button {
+      min-height: 672px;
+      background-size: 96px;
+    }
+  }
+}
+
+.video-button-player {
+  cursor: pointer;
+  &:before {
+    min-height: 184px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) url(img/video-player.svg) no-repeat center center;
+    background-size: 48px;
+    cursor: pointer;
+    z-index: 10;
+    transition: $transition;
+  }
+  &:hover span {
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: block;
+      margin-top: 2px;
+      position: absolute;
+      animation: 0.5s in-out forwards;
+      left: 0;
+    }
+  }
+}
+
+.video-button.video-module {
+  &:hover {
+    cursor: pointer;
+  }
+  .img-container {
+    position: relative;
+    &:before {
+      content: '';
+      min-height: 184px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3) url(img/video-player.svg) no-repeat center center;
+      background-size: 48px;
+      cursor: pointer;
+      z-index: 10;
+      transition: $transition;
+    }
+    &:hover:before {
+      background-color: transparent;
+    }
+  }
+}

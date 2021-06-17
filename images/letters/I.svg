@@ -1,0 +1,6 @@
+<svg width="107" height="200"  viewBox="0 0 107 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="25" y="20" class="st0" width="45" height="45" fill="#6A00C2"/>
+  <path d="M99.4,155V43.1H76.7V155H99.4z"  class="hover-purple" fill="transparent"/>
+  <path d="M79.4,155v1h1v-1H79.4z M79.4,43.1h1v-1h-1V43.1z M56.7,43.1v-1h-1v1H56.7z M56.7,155h-1v1h1V155z M80.4,155V43.1h-2V155
+    H80.4z M79.4,42.1H56.7v2h22.7V42.1z M55.7,43.1V155h2V43.1H55.7z M56.7,156h22.7v-2H56.7V156z" fill="black"/>
+</svg>

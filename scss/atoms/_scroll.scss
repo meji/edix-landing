@@ -1,0 +1,12 @@
+//Barra de scroll visible
+.scroll-bar-visible{
+  &::-webkit-scrollbar {-webkit-appearance: none;
+    &:vertical{width: 11px;}
+    &:horizontal {height: 11px;}
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    border: 2px solid white; /* fondo blanco, si es otro hay que cambiar color */
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
