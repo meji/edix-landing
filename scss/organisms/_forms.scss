@@ -18,7 +18,7 @@ form {
   .form-check label {
     font-size: 70%;
   }
-  .form-control,
+  .form-control, select.hs-input,
   input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
     background: $c-azulform;
     border: 2px solid $c-azulform;
@@ -28,6 +28,8 @@ form {
     height: 42px;
     box-shadow: none;
     -webkit-appearance: none;
+    width: 100%;
+    border-radius: $border-radius-small;
     &:focus {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border: 2px solid $c-azulform;
@@ -37,7 +39,7 @@ form {
       font-weight: bold;
     }
   }
-  select.form-control {
+  select.form-control, select.hs-input {
     background: url(img/select-icon.svg) no-repeat;
     background-position: center right 12px;
     -webkit-appearance: none;
@@ -166,7 +168,7 @@ form {
     margin: 8px auto 16px;
   }
   &.reduced-form {
-    .form-group {
+    .form-group, .hs-form-field, div.input {
       margin-bottom: 0.7rem;
     }
     .h5,
@@ -180,6 +182,23 @@ form {
   }
 }
 
+form div.input{
+  margin-bottom: 0.7rem;
+}
+.reduced-form form {
+  .form-group, .hs-form-field, div.input {
+    margin-bottom: 0.7rem;
+  }
+  .h5,
+  .h6 {
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  p.submit {
+    margin-top: 16px;
+  }
+}
+
 .blue-bg form {
   .check-button__control {
     border-color: $c-azuloscuroclaro;
@@ -189,7 +208,7 @@ form {
 }
 @include respond-above(xl) {
   form {
-    .form-control,
+    .form-control, select.hs-input,
     input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
       border-radius: 6px;
     }
@@ -226,4 +245,16 @@ form.border-radius.box-shadow {
     background: transparent;
     border-color: $c-morado;
   }
+}
+//Hubspot
+body li.hs-form-booleancheckbox{
+  text-align: left;
+  line-height: 1.2;
+}
+body select.hs-input{
+  background-image: url(https://user-assets-unbounce-com.s3.amazonaws.com/325bd16b-e95f-46c1-b463-6f187303cff2/7692a953-75fa-4bf5-ae08-27c0fefbb83a/select-icon.original.svg)
+}
+body input[type=checkbox].hs-input{
+  margin-right: 4px;
+  vertical-align: text-top;
 }

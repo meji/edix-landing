@@ -14,11 +14,14 @@
   #hero-form {
     padding: 16px;
     margin: 0;
+     .legal-text.grey-border{
+       border-color: rgba(255,255,255,0.3);
+     }
   }
 }
 
 #hero-form {
-  background: #fff;
+  background: rgba(255,255,255,0.5);
   border-radius: $border-radius-lg;
   box-shadow: $box-shadow;
   padding: 32px;

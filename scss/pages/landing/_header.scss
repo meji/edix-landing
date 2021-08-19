@@ -46,8 +46,14 @@ header#site-header.landing {
     }
   }
 }
+
+
 @include respond-above(lg) {
   header#site-header.landing {
+    .container {
+      max-width: 880px;
+      padding: 0 15px;
+    }
     .buttons {
       li {
         .btn.double {
@@ -78,14 +84,35 @@ header#site-header.landing {
     }
   }
 }
+
+@include respond-above(xl) {
+  header#site-header.landing {
+    .container {
+      max-width: 1088px;
+      padding: 0 15px;
+    }
+  }
+}
 @include respond-above(xxl) {
   header#site-header.landing {
+    .container {
+      max-width: 1200px;
+      padding: 0 15px;
+    }
     .buttons {
       li {
         .btn.btn-cta {
           padding: 15px 24px;
         }
       }
+    }
+  }
+}
+@include respond-above(xxxl) {
+  header#site-header.landing {
+    .container {
+      max-width: 1600px;
+      padding: 0 15px;
     }
   }
 }

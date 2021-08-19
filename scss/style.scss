@@ -5,7 +5,7 @@
 @import 'utils/mixins';
 @import 'utils/fonts';
 @import 'utils/swiper.min';
-@import 'utils/animate';
+//@import 'utils/animate';
 
 //Bootstrap
 @import 'bootstrap/bootstrap-grid';
@@ -13,13 +13,13 @@
 @import 'bootstrap/forms';
 @import 'bootstrap/transitions';
 @import 'bootstrap/modal';
-@import 'bootstrap/pagination';
-@import 'bootstrap/breadcrumb';
+//@import 'bootstrap/pagination';
+//@import 'bootstrap/breadcrumb';
 
 //Variables
 // fonts
 $font-base: 16px;
-$font-family: 'Galano', Helvetica, sans-serif;
+$font-family: "Galano", Helvetica, sans-serif;
 $font-secondary: 'Cormorant';
 $font-height: 1.5;
 
@@ -36,6 +36,11 @@ $c-turqoise: #00c2ab;
 $c-text: #333;
 $c-grey-text: #949494;
 $c-grey: rgba(0, 0, 0, 0.05);
+$primary-ll-purple: #EAD1FF;
+$primary-ll-light: #D2F6FF;
+$primary-light-blue: #00CCFF;
+
+
 
 //Transitions
 $transition: 0.3s;
@@ -49,66 +54,66 @@ $border-radius-small: 4px;
 
 //Atoms
 @import 'atoms/animations';
-@import 'organisms/blog_module';
-@import 'atoms/brand-icon';
-@import 'atoms/breadcrumb';
+//@import 'organisms/blog_module';
+//@import 'atoms/brand-icon';
+//@import 'atoms/breadcrumb';
 @import 'atoms/buttons';
-@import 'atoms/career-card';
-@import 'atoms/career-card-new';
-@import 'atoms/career-card-next';
-@import 'atoms/career_nav';
+//@import 'atoms/career-card';
+//@import 'atoms/career-card-new';
+//@import 'atoms/career-card-next';
+//@import 'atoms/career_nav';
 @import 'atoms/col2-image-text';
 @import 'atoms/colors-backgrounds';
 @import 'atoms/cookies';
 @import 'atoms/counter-numbers';
 @import 'atoms/discount';
 @import 'atoms/explorer';
-@import 'atoms/event';
-@import 'atoms/faqs';
+//@import 'atoms/event';
+//@import 'atoms/faqs';
 @import 'atoms/general';
 @import 'atoms/icon-title-text';
 @import 'atoms/imagen-texto-bold-boton';
 @import 'atoms/img-container';
-@import 'atoms/invoice';
+//@import 'atoms/invoice';
 @import 'atoms/job_item';
-@import 'atoms/labels';
-@import 'atoms/lamp-module';
-@import 'atoms/letters';
+//@import 'atoms/labels';
+//@import 'atoms/lamp-module';
+//@import 'atoms/letters';
 @import 'atoms/logo';
 @import 'atoms/medios-module';
-@import 'atoms/notice';
+//@import 'atoms/notice';
 @import 'atoms/number-lists';
-@import 'atoms/number-list-home';
+//@import 'atoms/number-list-home';
 @import 'atoms/numbered-block';
 @import 'atoms/opinion';
-@import 'atoms/offer';
-@import 'atoms/paginations';
-@import 'atoms/pills';
+//@import 'atoms/offer';
+//@import 'atoms/paginations';
+//@import 'atoms/pills';
 @import 'atoms/profes';
 @import 'atoms/profes-old';
-@import 'atoms/scroll';
+//@import 'atoms/scroll';
 @import 'atoms/signature';
 @import 'atoms/testimonials';
-@import 'atoms/term-finder';
-@import 'atoms/terms';
+//@import 'atoms/term-finder';
+//@import 'atoms/terms';
 @import 'atoms/tools';
 @import 'atoms/typos';
 @import 'atoms/viewport';
 
 //Organisms
 @import 'organisms/at-border-right-module';
-@import 'organisms/blog-menu';
+//@import 'organisms/blog-menu';
 @import 'organisms/bold-text-module';
 @import 'organisms/footer';
 @import 'organisms/forms';
-@import 'organisms/glosario';
+//@import 'organisms/glosario';
 @import 'organisms/header';
 @import 'organisms/heroes';
 @import 'organisms/modals';
 @import 'organisms/pic-text-module';
 @import 'organisms/promo-module';
-@import 'organisms/post';
-@import 'organisms/posts';
+//@import 'organisms/post';
+//@import 'organisms/posts';
 @import 'organisms/sections';
 @import 'organisms/slider-posts';
 @import 'organisms/slides';
@@ -116,6 +121,6 @@ $border-radius-small: 4px;
 @import 'organisms/video';
 
 //Pages
-@import 'pages/error';
+//@import 'pages/error';
 @import 'pages/landing/index';
-@import 'pages/becas/index';
+//@import 'pages/becas/index';
