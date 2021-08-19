@@ -125,6 +125,15 @@
   }
 }
 
+@media screen and (orientation: landscape) and (max-height: 768px){
+  #hero-landing {
+    .data-container{
+      h1{
+        font-size: 4rem;
+      }
+    }
+  }
+}
 
 @include respond-above(xl) {
   #hero-landing {
